@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Ticker } from "@/components/ticker";
 import { motion } from "framer-motion";
-import { ArrowRight, TrendingUp, Users, Calendar, Award, BookOpen, LineChart, DollarSign } from "lucide-react";
+import { ArrowRight, Users, Award, BookOpen, LineChart } from "lucide-react";
 
 const fadeInUp = {
 	initial: { opacity: 0, y: 20 },
@@ -106,7 +106,7 @@ export default function Home() {
 
 						<CardHeader className="relative z-10 h-full flex flex-col justify-end">
 							<div className="mb-4 inline-flex items-center gap-2 px-2 py-1 rounded bg-primary text-primary-foreground w-fit text-xs font-mono uppercase font-bold">Flagship Event</div>
-							<CardTitle className="text-4xl md:text-5xl text-white">FinStreet '25</CardTitle>
+							<CardTitle className="text-4xl md:text-5xl text-white">FinStreet &apos;25</CardTitle>
 							<CardDescription className="text-gray-300 text-lg mt-2 max-w-md">
 								The absolute pinnacle of financial festivals. Competitions, leaders, and market mastery. Experience the thrill.
 							</CardDescription>
@@ -148,7 +148,7 @@ export default function Home() {
 						<CardContent className="space-y-4">
 							<div className="p-3 rounded-lg bg-surface border border-white/5 flex justify-between items-center hover:bg-white/5 transition-colors">
 								<div className="flex flex-col">
-									<span className="font-medium">The Bull Run of '24</span>
+									<span className="font-medium">The Bull Run of &apos;24</span>
 									<span className="text-xs text-muted-foreground">Published 2 days ago</span>
 								</div>
 								<ArrowRight className="w-4 h-4 text-muted-foreground" />
@@ -185,7 +185,7 @@ export default function Home() {
 					Ready to <span className="text-secondary">Master the Market?</span>
 				</h2>
 				<p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-					Join the most premier technical club of BIT Mesra. Whether you're a novice or a trader, there's a place for you at FinPro.
+					Join the most premier technical club of BIT Mesra. Whether you&apos;re a novice or a trader, there&apos;s a place for you at FinPro.
 				</p>
 				<Button size="lg" className="rounded-full h-14 px-10 text-lg shadow-[0_0_40px_rgba(252,211,77,0.3)] hover:shadow-[0_0_60px_rgba(252,211,77,0.5)] transition-shadow">
 					Become a Member

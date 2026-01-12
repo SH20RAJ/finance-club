@@ -29,7 +29,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="font-heading text-[12vw] leading-[0.85] font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-white/60 tracking-tight"
+          className="font-heading text-[12vw] leading-[0.85] font-bold text-transparent bg-clip-text bg-linear-to-b from-white to-white/60 tracking-tight"
         >
           FINSTREET
         </motion.h1>

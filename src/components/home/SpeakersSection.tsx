@@ -32,7 +32,7 @@ export function SpeakersSection() {
                  className="group relative h-[400px] bg-neutral-900 rounded-xl overflow-hidden cursor-pointer"
                >
                   {/* Placeholder Image */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80" />
+                  <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-80" />
                   <div className="absolute inset-0 bg-neutral-800 group-hover:bg-neutral-700 transition-colors" />
                   
                   <div className="absolute bottom-0 left-0 p-6 w-full">

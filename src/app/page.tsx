@@ -15,6 +15,7 @@ export const metadata = {
 export default function Home() {
   return (
     <main className="min-h-screen bg-zinc-50 dark:bg-black text-zinc-900 dark:text-zinc-50 selection:bg-fin-blue selection:text-white overflow-hidden">
+      <Navbar />
       
       {/* HERO SECTION WITH GLOWING EFFECT */}
       <section className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden pt-20">
@@ -33,7 +34,7 @@ export default function Home() {
             <h1 className="font-handwritten font-black text-[12vw] leading-[0.85] tracking-tight relative">
                FINSTREET
                <span className="absolute -top-4 -right-8 text-[4vw] text-fin-blue rotate-12">
-                 '26
+                 &apos;26
                </span>
             </h1>
 

@@ -36,11 +36,16 @@ export default function RootLayout({
 			<head>
 				<link rel="icon" href="/favicon.svg" type="image/svg+xml"></link>
 			</head>
+import { Footer } from "@/components/layout/Footer";
+
+// ...
+
 			<body className={`${nunitoSans.variable} ${syne.variable} ${patrickHand.variable} antialiased bg-background text-foreground min-h-screen relative overflow-x-hidden`}>
 				<div className="flex flex-col min-h-screen">
+                    <Navbar />
 					{children}
+                    <Footer />
 				</div>
-				<Navbar />
 			</body>
 		</html>
 	);

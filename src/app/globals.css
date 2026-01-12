@@ -44,6 +44,7 @@
 
   --font-sans: var(--font-nunito-sans);
   --font-heading: var(--font-syne);
+  --font-handwritten: var(--font-patrick-hand);
 
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;

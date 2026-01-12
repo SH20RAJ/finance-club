@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Nunito_Sans, Syne } from "next/font/google"; // Using Syne as substitute for Concourse
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 
-const geistSans = Geist({
-	variable: "--font-geist-sans",
+const nunitoSans = Nunito_Sans({
+	variable: "--font-nunito-sans",
 	subsets: ["latin"],
+	weight: ["300", "400", "600", "700", "800", "900"],
 });
 
-const geistMono = Geist_Mono({
-	variable: "--font-geist-mono",
+const syne = Syne({
+	variable: "--font-syne",
 	subsets: ["latin"],
+	weight: ["400", "500", "600", "700", "800"], // Geometric weights
 });
 
 export const metadata: Metadata = {
@@ -28,7 +30,7 @@ export default function RootLayout({
 			<head>
 				<link rel="icon" href="/favicon.svg" type="image/svg+xml"></link>
 			</head>
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground min-h-screen relative overflow-x-hidden`}>
+			<body className={`${nunitoSans.variable} ${syne.variable} antialiased bg-background text-foreground min-h-screen relative overflow-x-hidden`}>
 				<div className="flex flex-col min-h-screen">
 					{children}
 				</div>

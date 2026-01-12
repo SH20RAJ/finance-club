@@ -1,135 +1,135 @@
 @import "tailwindcss";
 
 @theme {
-	--color-background: var(--background);
-	--color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
 
-	--color-card: var(--card);
-	--color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
 
-	--color-popover: var(--popover);
-	--color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
 
-	--color-primary: var(--primary);
-	--color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
 
-	--color-secondary: var(--secondary);
-	--color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
 
-	--color-muted: var(--muted);
-	--color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
 
-	--color-accent: var(--accent);
-	--color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
 
-	--color-destructive: var(--destructive);
-	--color-destructive-foreground: var(--destructive-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
 
-	--color-border: var(--border);
-	--color-input: var(--input);
-	--color-ring: var(--ring);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
 
-	--radius-lg: var(--radius);
-	--radius-md: calc(var(--radius) - 2px);
-	--radius-sm: calc(var(--radius) - 4px);
+  /* Custom Finance Club Colors */
+  --color-fin-blue: #5a4ff3;
+  --color-fin-red: #ed455d;
+  --color-fin-dark: #25313c;
+  --color-fin-green: #00c04d;
 
-	--font-sans: var(--font-geist-sans);
-	--font-mono: var(--font-geist-mono);
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
 
-	--animate-accordion-down: accordion-down 0.2s ease-out;
-	--animate-accordion-up: accordion-up 0.2s ease-out;
-	--animate-float: float 6s ease-in-out infinite;
+  --font-sans: var(--font-nunito-sans);
+  --font-heading: var(--font-syne);
 
-	@keyframes accordion-down {
-		from {
-			height: 0
-		}
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+  --animate-float: float 6s ease-in-out infinite;
 
-		to {
-			height: var(--radix-accordion-content-height)
-		}
-	}
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
 
-	@keyframes accordion-up {
-		from {
-			height: var(--radix-accordion-content-height)
-		}
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
 
-		to {
-			height: 0
-		}
-	}
-
-	@keyframes float {
-
-		0%,
-		100% {
-			transform: translateY(0);
-		}
-
-		50% {
-			transform: translateY(-20px);
-		}
-	}
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
 }
 
 :root {
-	/* Finance Club Dark Theme Base */
-	--background: oklch(0.10 0.02 240);
-	/* Deep Finance Navy/Black */
-	--foreground: oklch(0.98 0.01 240);
+  /* Finance Club Dark Theme Base */
+  --background: #25313c; /* fin-dark */
+  --foreground: #ffffff;
 
-	--card: oklch(0.13 0.03 240);
-	--card-foreground: oklch(0.98 0.01 240);
+  --card: rgba(255, 255, 255, 0.03);
+  --card-foreground: #ffffff;
 
-	--popover: oklch(0.13 0.03 240);
-	--popover-foreground: oklch(0.98 0.01 240);
+  --popover: #25313c;
+  --popover-foreground: #ffffff;
 
-	--primary: oklch(0.85 0.16 85);
-	/* Rich Gold */
-	--primary-foreground: oklch(0.15 0.05 240);
+  --primary: #5a4ff3; /* fin-blue */
+  --primary-foreground: #ffffff;
 
-	--secondary: oklch(0.65 0.18 150);
-	/* Market Green */
-	--secondary-foreground: oklch(0.10 0.02 240);
+  --secondary: #ed455d; /* fin-red */
+  --secondary-foreground: #ffffff;
 
-	--muted: oklch(0.25 0.02 240);
-	--muted-foreground: oklch(0.65 0 0);
+  --muted: rgba(255, 255, 255, 0.1);
+  --muted-foreground: #a1a1aa;
 
-	--accent: oklch(0.20 0.05 240);
-	/* Slightly lighter navy for hovers */
-	--accent-foreground: oklch(0.85 0.16 85);
-	/* Gold Text */
+  --accent: #5a4ff3;
+  --accent-foreground: #ffffff;
 
-	--destructive: oklch(0.58 0.23 28);
-	--destructive-foreground: oklch(0.98 0 0);
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
 
-	--border: oklch(0.25 0.02 240);
-	--input: oklch(0.25 0.02 240);
-	--ring: oklch(0.85 0.16 85);
-	/* Gold Ring */
+  --border: rgba(255, 255, 255, 0.1);
+  --input: rgba(255, 255, 255, 0.1);
+  --ring: #5a4ff3;
 
-	--radius: 0.5rem;
+  --radius: 0.5rem;
 }
 
 body {
-	background-color: var(--background);
-	color: var(--foreground);
-	font-family: var(--font-sans);
-	antialiased: true;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  antialiased: true;
 }
 
 /* Glassmorphism Utilities */
 .glass {
-	background: rgba(255, 255, 255, 0.03);
-	backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px);
-	border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .glass-card {
-	background: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
-	backdrop-filter: blur(16px);
-	border: 1px solid rgba(255, 255, 255, 0.08);
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.01) 100%
+  );
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }

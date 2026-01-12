@@ -26,7 +26,7 @@ export function Navbar() {
          </div>
 
          {/* Links */}
-         <ul className="flex items-center gap-8 hidden md:flex">
+         <ul className="hidden md:flex items-center gap-8">
             {links.map((link) => (
               <li key={link.name}>
                  <Link 

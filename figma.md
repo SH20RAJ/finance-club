@@ -1,0 +1,1023 @@
+# Figma Design Content
+
+
+# Page: Landing page
+
+
+## Styles (FRAME)
+  - **typography**: "typography"
+  - **Paragraph**: "Paragraph"
+  - **Colors**: "Colors"
+  - **Heading 1**: "Heading 1"
+  - **Heading 2**: "Heading 2"
+  - **Heading 3**: "Heading 3"
+  - **Heading 4**: "Heading 4"
+  - **Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.**: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.  Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia."
+  - **caption**: "caption"
+  - **link**: "link"
+  - **A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.**: "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart."
+  - **Link**: "Link"
+
+## Buttons (FRAME)
+  - **Primary Button/Blue** (COMPONENT)
+    - **Primary Button**: "Primary Button"
+  - **Primary Button/Red** (COMPONENT)
+    - **Primary Button**: "Primary Button"
+  - **Primary Button/White** (COMPONENT)
+    - **Primary Button**: "Primary Button"
+  - **Secondary Button/Blue** (COMPONENT)
+    - **Secondary Button**: "Secondary Button"
+  - **Secondary Button/Red** (COMPONENT)
+    - **Secondary Button**: "Secondary Button"
+  - **Secondary Button/White** (COMPONENT)
+    - **Secondary Button**: "Secondary Button"
+  - **Buttons**: "Buttons"
+
+## Inputs (FRAME)
+  - **Input/Normal** (COMPONENT)
+    - **Email**: "Email"
+  - **Input/Error** (COMPONENT)
+    - **ted.mosby@gmail.com**: "ted.mosby@gmail.com"
+  - **Input/Focused** (COMPONENT)
+    - **barney.stin**: "barney.stin"
+  - **Inputs**: "Inputs"
+  - **Normal field**: "Normal field"
+  - **Dropdown** (COMPONENT)
+    - **Slect option**: "Slect option"
+    - **icon/navigation/expand_more_24px** (INSTANCE)
+  - **dropdown**: "dropdown"
+  - **Text Area** (COMPONENT)
+    - **Comments**: "Comments"
+    - **expand icon** (GROUP)
+  - **text area**: "text area"
+  - **Checkboxes**: "Checkboxes"
+  - **focused field**: "focused field"
+  - **error field**: "error field"
+  - **Checkbox/Normal** (COMPONENT)
+    - **Checkbox Normal**: "Checkbox Normal"
+    - **icon/toggle/check_box_outline_blank_24px** (INSTANCE)
+  - **Checkbox/Selected** (COMPONENT)
+    - **Checkbox Selected**: "Checkbox Selected"
+    - **icon/toggle/check_box_24px** (INSTANCE)
+  - **radio buttons**: "radio buttons"
+  - **Radio/Normal** (COMPONENT)
+    - **Radio Normal**: "Radio Normal"
+    - **icon/toggle/radio_button_unchecked_24px** (INSTANCE)
+  - **Radio/Selected** (COMPONENT)
+    - **Radio Selected**: "Radio Selected"
+    - **icon/toggle/radio_button_checked_24px** (INSTANCE)
+
+## Placeholders (FRAME)
+  - **Placeholders**: "Placeholders"
+  - **Image** (COMPONENT)
+    - **icon/image/photo_24px** (INSTANCE)
+  - **Phone** (COMPONENT)
+    - **Base** (GROUP)
+    - **Elements** (GROUP)
+    - **Screen** (GROUP)
+  - **Video** (COMPONENT)
+    - **icon/av/play_circle_filled_24px** (INSTANCE)
+  - **image**: "image"
+  - **Avatar**: "Avatar"
+  - **stars**: "stars"
+  - **video**: "video"
+  - **Phone**: "Phone"
+  - **Window**: "Window"
+  - **Avatar** (COMPONENT)
+    - **icon/social/person_24px** (INSTANCE)
+  - **Stars** (COMPONENT)
+    - **icon/toggle/star_purple500_24px** (INSTANCE)
+    - **icon/toggle/star_purple500_24px** (INSTANCE)
+    - **icon/toggle/star_purple500_24px** (INSTANCE)
+    - **icon/toggle/star_purple500_24px** (INSTANCE)
+    - **icon/toggle/star_purple500_24px** (INSTANCE)
+  - **Window** (COMPONENT)
+    - **Browser** (GROUP)
+
+## Icons (FRAME)
+  - **Action** (FRAME)
+    - **Action**: "Action"
+    - **icon/action/accessibility_24px** (COMPONENT)
+    - **icon/action/accessibility_new_24px** (COMPONENT)
+    - **icon/action/account_balance_24px** (COMPONENT)
+    - **icon/action/account_box_24px** (COMPONENT)
+    - **icon/action/account_circle_24px** (COMPONENT)
+    - **icon/action/add_shopping_cart_24px** (COMPONENT)
+    - **icon/action/alarm_24px** (COMPONENT)
+    - **icon/action/all_inbox_24px** (COMPONENT)
+    - **icon/action/all_out_24px** (COMPONENT)
+    - **icon/action/android_24px** (COMPONENT)
+    - **icon/action/announcement_24px** (COMPONENT)
+    - **icon/action/arrow_right_alt_24px** (COMPONENT)
+    - **icon/action/aspect_ratio_24px** (COMPONENT)
+    - **icon/action/bookmark_24px** (COMPONENT)
+    - **icon/action/bookmark_border_24px** (COMPONENT)
+    - **icon/action/bookmarks_24px** (COMPONENT)
+    - **icon/action/build_24px** (COMPONENT)
+    - **icon/action/cached_24px** (COMPONENT)
+    - **icon/action/calendar_today_24px** (COMPONENT)
+    - **icon/action/calendar_view_day_24px** (COMPONENT)
+    - **icon/action/camera_enhance_24px** (COMPONENT)
+    - **icon/action/card_giftcard_24px** (COMPONENT)
+    - **icon/action/check_circle_24px** (COMPONENT)
+    - **icon/action/check_circle_outline_24px** (COMPONENT)
+    - **icon/action/credit_card_24px** (COMPONENT)
+    - **icon/action/date_range_24px** (COMPONENT)
+    - **icon/action/delete_24px** (COMPONENT)
+    - **icon/action/delete_forever_24px** (COMPONENT)
+    - **icon/action/delete_outline_24px** (COMPONENT)
+    - **icon/action/done_24px** (COMPONENT)
+    - **icon/action/done_all_24px** (COMPONENT)
+    - **icon/action/done_outline_24px** (COMPONENT)
+    - **icon/action/exit_to_app_24px** (COMPONENT)
+    - **icon/action/explore_24px** (COMPONENT)
+    - **icon/action/explore_off_24px** (COMPONENT)
+    - **icon/action/extension_24px** (COMPONENT)
+    - **icon/action/face_24px** (COMPONENT)
+    - **icon/action/face_unlock_24px** (COMPONENT)
+    - **icon/action/favorite_24px** (COMPONENT)
+    - **icon/action/favorite_border_24px** (COMPONENT)
+    - **icon/action/gif_24px** (COMPONENT)
+    - **icon/action/help_24px** (COMPONENT)
+    - **icon/action/help_outline_24px** (COMPONENT)
+    - **icon/action/highlight_off_24px** (COMPONENT)
+    - **icon/action/history_24px** (COMPONENT)
+    - **icon/action/home_24px** (COMPONENT)
+    - **icon/action/info_24px** (COMPONENT)
+    - **icon/action/info_outline_24px** (COMPONENT)
+    - **icon/action/input_24px** (COMPONENT)
+    - **icon/action/language_24px** (COMPONENT)
+    - **icon/action/launch_24px** (COMPONENT)
+    - **icon/action/lightbulb_outline_24px** (COMPONENT)
+    - **icon/action/lock_outline_24px** (COMPONENT)
+    - **icon/action/motorcycle_24px** (COMPONENT)
+    - **icon/action/open_in_browser_24px** (COMPONENT)
+    - **icon/action/open_in_new_24px** (COMPONENT)
+    - **icon/action/open_with_24px** (COMPONENT)
+    - **icon/action/pageview_24px** (COMPONENT)
+    - **icon/action/pan_tool_24px** (COMPONENT)
+    - **icon/action/payment_24px** (COMPONENT)
+    - **icon/action/perm_identity_24px** (COMPONENT)
+    - **icon/action/perm_media_24px** (COMPONENT)
+    - **icon/action/perm_phone_msg_24px** (COMPONENT)
+    - **icon/action/query_builder_24px** (COMPONENT)
+    - **icon/action/room_24px** (COMPONENT)
+    - **icon/action/search_24px** (COMPONENT)
+    - **icon/action/settings_24px** (COMPONENT)
+    - **icon/action/supervisor_account_24px** (COMPONENT)
+    - **icon/action/thumb_down_24px** (COMPONENT)
+    - **icon/action/thumb_up_24px** (COMPONENT)
+    - **icon/action/visibility_24px** (COMPONENT)
+    - **icon/action/visibility_off_24px** (COMPONENT)
+    - **icon/action/watch_later_24px** (COMPONENT)
+    - **icon/action/work_24px** (COMPONENT)
+    - **icon/action/work_off_24px** (COMPONENT)
+    - **icon/action/zoom_in_24px** (COMPONENT)
+    - **icon/action/zoom_out_24px** (COMPONENT)
+  - **Alert** (FRAME)
+    - **Alert**: "Alert"
+    - **icon/alert/add_24px** (COMPONENT)
+    - **icon/alert/error_24px** (COMPONENT)
+    - **icon/alert/error_outline_24px** (COMPONENT)
+    - **icon/alert/notification_important_24px** (COMPONENT)
+    - **icon/alert/warning_24px** (COMPONENT)
+    - **icon/alert/warning_amber_24px** (COMPONENT)
+  - **ToggAVe** (FRAME)
+    - **AV**: "AV"
+    - **icon/av/fast_forward_24px** (COMPONENT)
+    - **icon/av/fast_rewind_24px** (COMPONENT)
+    - **icon/av/loop_24px** (COMPONENT)
+    - **icon/av/mic_24px** (COMPONENT)
+    - **icon/av/mic_none_24px** (COMPONENT)
+    - **icon/av/mic_off_24px** (COMPONENT)
+    - **icon/av/pause_24px** (COMPONENT)
+    - **icon/av/pause_circle_filled_24px** (COMPONENT)
+    - **icon/av/pause_circle_outline_24px** (COMPONENT)
+    - **icon/av/play_arrow_24px** (COMPONENT)
+    - **icon/av/play_circle_filled_24px** (COMPONENT)
+    - **icon/av/play_circle_filled_white_24px** (COMPONENT)
+    - **icon/av/play_circle_outline_24px** (COMPONENT)
+    - **icon/av/replay_24px** (COMPONENT)
+    - **icon/av/replay_30_24px** (COMPONENT)
+    - **icon/av/shuffle_24px** (COMPONENT)
+    - **icon/av/skip_next_24px** (COMPONENT)
+    - **icon/av/skip_previous_24px** (COMPONENT)
+    - **icon/av/videocam_24px** (COMPONENT)
+    - **icon/av/videocam_off_24px** (COMPONENT)
+    - **icon/av/volume_down_24px** (COMPONENT)
+    - **icon/av/volume_mute_24px** (COMPONENT)
+    - **icon/av/volume_off_24px** (COMPONENT)
+    - **icon/av/volume_up_24px** (COMPONENT)
+  - **Communication** (FRAME)
+    - **Communication**: "Communication"
+    - **icon/communication/add_call_24px** (COMPONENT)
+    - **icon/communication/alternate_email_24px** (COMPONENT)
+    - **icon/communication/business_24px** (COMPONENT)
+    - **icon/communication/call_24px** (COMPONENT)
+    - **icon/communication/call_end_24px** (COMPONENT)
+    - **icon/communication/email_24px** (COMPONENT)
+    - **icon/communication/location_off_24px** (COMPONENT)
+    - **icon/communication/location_on_24px** (COMPONENT)
+    - **icon/communication/mail_outline_24px** (COMPONENT)
+    - **icon/communication/message_24px** (COMPONENT)
+  - **File** (FRAME)
+    - **File**: "File"
+    - **icon/file/attachment_24px** (COMPONENT)
+    - **icon/file/cloud_24px** (COMPONENT)
+    - **icon/file/cloud_circle_24px** (COMPONENT)
+    - **icon/file/cloud_done_24px** (COMPONENT)
+    - **icon/file/cloud_download_24px** (COMPONENT)
+    - **icon/file/cloud_off_24px** (COMPONENT)
+    - **icon/file/cloud_queue_24px** (COMPONENT)
+    - **icon/file/cloud_upload_24px** (COMPONENT)
+    - **icon/file/create_new_folder_24px** (COMPONENT)
+    - **icon/file/download_24px** (COMPONENT)
+    - **icon/file/download_done_24px** (COMPONENT)
+    - **icon/file/folder_24px** (COMPONENT)
+    - **icon/file/folder_open_24px** (COMPONENT)
+    - **icon/file/folder_shared_24px** (COMPONENT)
+    - **icon/file/upload_24px** (COMPONENT)
+    - **icon/image/photo_24px** (COMPONENT)
+  - **Toggle** (FRAME)
+    - **Toggle**: "Toggle"
+    - **icon/toggle/indeterminate_check_box_24px** (COMPONENT)
+    - **icon/toggle/star_24px** (COMPONENT)
+    - **icon/toggle/star_border_24px** (COMPONENT)
+    - **icon/toggle/star_border_purple500_24px** (COMPONENT)
+    - **icon/toggle/star_half_24px** (COMPONENT)
+    - **icon/toggle/star_outline_24px** (COMPONENT)
+    - **icon/toggle/toggle_off_24px** (COMPONENT)
+    - **icon/toggle/toggle_on_24px** (COMPONENT)
+    - **icon/toggle/radio_button_checked_24px** (COMPONENT)
+    - **icon/toggle/check_box_24px** (COMPONENT)
+    - **icon/toggle/check_box_outline_blank_24px** (COMPONENT)
+    - **icon/toggle/radio_button_unchecked_24px** (COMPONENT)
+  - **Navigation** (FRAME)
+    - **Navigation**: "Navigation"
+    - **icon/navigation/apps_24px** (COMPONENT)
+    - **icon/navigation/arrow_back_24px** (COMPONENT)
+    - **icon/navigation/arrow_back_ios_24px** (COMPONENT)
+    - **icon/navigation/arrow_downward_24px** (COMPONENT)
+    - **icon/navigation/arrow_drop_down_24px** (COMPONENT)
+    - **icon/navigation/arrow_drop_down_circle_24px** (COMPONENT)
+    - **icon/navigation/arrow_drop_up_24px** (COMPONENT)
+    - **icon/navigation/arrow_forward_24px** (COMPONENT)
+    - **icon/navigation/arrow_forward_ios_24px** (COMPONENT)
+    - **icon/navigation/arrow_left_24px** (COMPONENT)
+    - **icon/navigation/arrow_right_24px** (COMPONENT)
+    - **icon/navigation/arrow_upward_24px** (COMPONENT)
+    - **icon/navigation/cancel_24px** (COMPONENT)
+    - **icon/navigation/check_24px** (COMPONENT)
+    - **icon/navigation/chevron_left_24px** (COMPONENT)
+    - **icon/navigation/chevron_right_24px** (COMPONENT)
+    - **icon/navigation/close_24px** (COMPONENT)
+    - **icon/navigation/expand_less_24px** (COMPONENT)
+    - **icon/navigation/expand_more_24px** (COMPONENT)
+    - **icon/navigation/first_page_24px** (COMPONENT)
+    - **icon/navigation/fullscreen_24px** (COMPONENT)
+    - **icon/navigation/fullscreen_exit_24px** (COMPONENT)
+    - **icon/navigation/last_page_24px** (COMPONENT)
+    - **icon/navigation/menu_24px** (COMPONENT)
+    - **icon/navigation/more_horiz_24px** (COMPONENT)
+    - **icon/navigation/more_vert_24px** (COMPONENT)
+    - **icon/navigation/refresh_24px** (COMPONENT)
+    - **icon/navigation/subdirectory_arrow_left_24px** (COMPONENT)
+    - **icon/navigation/subdirectory_arrow_right_24px** (COMPONENT)
+    - **icon/navigation/unfold_less_24px** (COMPONENT)
+    - **icon/navigation/unfold_more_24px** (COMPONENT)
+  - **Social** (FRAME)
+    - **Social**: "Social"
+    - **icon/social/cake_24px** (COMPONENT)
+    - **icon/social/domain_24px** (COMPONENT)
+    - **icon/social/group_24px** (COMPONENT)
+    - **icon/social/group_add_24px** (COMPONENT)
+    - **icon/social/location_city_24px** (COMPONENT)
+    - **icon/social/mood_24px** (COMPONENT)
+    - **icon/social/mood_bad_24px** (COMPONENT)
+    - **icon/social/notifications_24px** (COMPONENT)
+    - **icon/social/notifications_active_24px** (COMPONENT)
+    - **icon/social/notifications_none_24px** (COMPONENT)
+    - **icon/social/notifications_off_24px** (COMPONENT)
+    - **icon/social/notifications_paused_24px** (COMPONENT)
+    - **icon/social/pages_24px** (COMPONENT)
+    - **icon/social/party_mode_24px** (COMPONENT)
+    - **icon/social/people_24px** (COMPONENT)
+    - **icon/social/people_outline_24px** (COMPONENT)
+    - **icon/social/person_add_24px** (COMPONENT)
+    - **icon/social/person_outline_24px** (COMPONENT)
+    - **icon/social/plus_one_24px** (COMPONENT)
+    - **icon/social/poll_24px** (COMPONENT)
+    - **icon/social/publicon/social/24px** (COMPONENT)
+    - **icon/social/school_24px** (COMPONENT)
+    - **icon/social/sentiment_dissatisfied_24px** (COMPONENT)
+    - **icon/social/sentiment_neutral_24px** (COMPONENT)
+    - **icon/social/sentiment_satisfied_24px** (COMPONENT)
+    - **icon/social/sentiment_very_dissatisfied_24px** (COMPONENT)
+    - **icon/social/sentiment_very_satisfied_24px** (COMPONENT)
+    - **icon/social/share_24px** (COMPONENT)
+    - **icon/social/thumb_down_alt_24px** (COMPONENT)
+    - **icon/social/thumb_up_alt_24px** (COMPONENT)
+    - **icon/social/whatshot_24px** (COMPONENT)
+    - **icon/social/person_24px** (COMPONENT)
+  - **icon/toggle/star_border_purple500_24px** (INSTANCE)
+  - **icon/toggle/star_border_purple500_24px** (INSTANCE)
+  - **icon/toggle/star_border_purple500_24px** (INSTANCE)
+  - **icon/toggle/star_border_purple500_24px** (INSTANCE)
+  - **icon/toggle/star_border_purple500_24px** (INSTANCE)
+
+## iPad Pro 12.9" - 1 (FRAME)
+  - **COLOUR PALETTE**: "COLOUR PALETTE"
+  - **.home .about .photo gallery .testimonials .events informations .form filling pages for each**: ".home .about .photo gallery .testimonials .events informations .form filling pages for each"
+
+## Desktop - 2 (FRAME)
+  - **Logo**: "Logo"
+  - **Events**: "Events"
+  - **Gallery**: "Gallery"
+  - **About Us**: "About Us"
+  - **button 2** (COMPONENT)
+    - **Log In**: "Log In"
+  - **A Tool that can cut both ways — Creating Wealth or Causing Harm**: "A Tool that can cut both ways  —  Creating Wealth or Causing Harm"
+  - **Dollar$**: "Dollar$"
+  - **Sign Up Your Team**: "Sign Up  Your Team"
+  - **Contact Us**: "Contact Us"
+  - **About Us**: "About Us"
+  - **Reviews On Our Last Event**: "Reviews On Our Last Event"
+  - **The Finance Club of BIT Mesra is a student-driven initiative dedicated to fostering financial literacy, market awareness, and a deeper understanding of the global economic landscape. Established with the vision of bridging the gap between classroom learning and real-world financial applications, the club provides a platform for students to explore the dynamic world of finance through hands-on learning and collaborative growth. At the Finance Club, we believe that financial education empowers individuals to make informed decisions—whether in personal finance, investments, corporate strategy, or entrepreneurship. Our community brings together enthusiasts from diverse disciplines, united by a shared passion for markets, money management, and economic insight. Through interactive workshops, stock market simulations, guest lectures from industry experts, and case-study competitions, we aim to cultivate analytical thinking, leadership skills, and a problem-solving mindset. The club also maintains market updates, research discussions, and peer-learning sessions to help members stay ahead in the fast-evolving financial domain. We strive to create an inclusive and intellectually stimulating environment where every member—whether a beginner or an experienced finance enthusiast—can learn, contribute, and grow. The Finance Club of BIT Mesra is not just a team; it’s a community committed to building future leaders in the world of finance. Join us as we decode markets, explore opportunities, and shape financially empowered futures.**: "The Finance Club of BIT Mesra is a student-driven initiative dedicated to fostering financial literacy, market awareness, and a deeper understanding of the global economic landscape. Established with the vision of bridging the gap between classroom learning and real-world financial applications, the club provides a platform for students to explore the dynamic world of finance through hands-on learning and collaborative growth.  At the Finance Club, we believe that financial education empowers individuals to make informed decisions—whether in personal finance, investments, corporate strategy, or entrepreneurship. Our community brings together enthusiasts from diverse disciplines, united by a shared passion for markets, money management, and economic insight.  Through interactive workshops, stock market simulations, guest lectures from industry experts, and case-study competitions, we aim to cultivate analytical thinking, leadership skills, and a problem-solving mindset. The club also maintains market updates, research discussions, and peer-learning sessions to help members stay ahead in the fast-evolving financial domain.  We strive to create an inclusive and intellectually stimulating environment where every member—whether a beginner or an experienced finance enthusiast—can learn, contribute, and grow. The Finance Club of BIT Mesra is not just a team; it’s a community committed to building future leaders in the world of finance.  Join us as we decode markets, explore opportunities, and shape financially empowered futures."
+  - **Group 10** (GROUP)
+    - **Vestibulum eu quam nec neque pellentesque efficitur id eget nisl. Proin porta est convallis lacus bl**: "Vestibulum eu quam nec neque pellentesque efficitur id eget nisl. Proin porta est convallis lacus bl"
+    - **Esther Howard**: "Esther Howard"
+    - **Facebook**: "Facebook"
+    - **Stars** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+    - **Avatar** (FRAME)
+  - **Group 1** (GROUP)
+    - **Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique**: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique"
+    - **Amy Goldberg**: "Amy Goldberg"
+    - **CEO of Coca Cola**: "CEO of Coca Cola"
+    - **Stars** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+    - **Avatar** (FRAME)
+  - **Group 12** (GROUP)
+    - **Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique**: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique"
+    - **Amy Goldberg**: "Amy Goldberg"
+    - **CEO of Coca Cola**: "CEO of Coca Cola"
+    - **Stars** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+    - **Avatar** (FRAME)
+  - **Group 9** (GROUP)
+    - **Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu dapibus. P**: "Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu dapibus. P"
+    - **Devon Lane**: "Devon Lane"
+    - **Starbucks**: "Starbucks"
+    - **Stars** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+    - **Avatar** (FRAME)
+  - **icon/navigation/arrow_back_24px** (INSTANCE)
+  - **icon/navigation/arrow_forward_24px** (INSTANCE)
+  - **Finance Club**: "Finance Club"
+
+## Desktop - 3 (FRAME)
+  - **FINSTREET**: "FINSTREET"
+  - **finance club presents-**: "finance club presents-"
+  - **Logo**: "Logo"
+  - **Events**: "Events"
+  - **Gallery**: "Gallery"
+  - **About Us**: "About Us"
+  - **button 2** (INSTANCE)
+    - **Log In**: "Log In"
+  - **A Tool that can cut both ways — Creating Wealth or Causing Harm**: "A Tool that can cut both ways  —  Creating Wealth or Causing Harm"
+  - **Dollar$**: "Dollar$"
+  - **Sign Up Your Team**: "Sign Up  Your Team"
+  - **Contact Us**: "Contact Us"
+
+## Desktop - 6 (FRAME)
+  - **finstreet**: "finstreet"
+  - **Group 13** (GROUP)
+    - **Logo** (GROUP)
+    - **Home**: "Home"
+    - **About**: "About"
+    - **Events**: "Events"
+    - **Get Heynds CTA** (GROUP)
+      - **Join Us**: "Join Us"
+    - **Language Dropdown CTA** (GROUP)
+      - **Contact**: "Contact"
+  - **Group 1437254771** (GROUP)
+    - **Group 1437254775** (GROUP)
+  - **FINANCE**: "FINANCE"
+  - **club**: "club"
+  - **presents**: "presents"
+  - **Group 1437254769** (GROUP)
+    - **Group 1437254768** (GROUP)
+      - **Group 1437254767** (GROUP)
+        - **Group 1437254765** (GROUP)
+          - **Group 1437254685** (GROUP)
+            - **Group 1437254681** (GROUP)
+              - **Sign Up Your Team**: "Sign Up Your Team"
+        - **Group 1437254766** (GROUP)
+          - **Group 1437254685** (GROUP)
+            - **Group 1437254681** (GROUP)
+              - **Contact Us**: "Contact Us"
+      - **A Tool that can cut both ways — Creating Wealth or Causing Harm**: "A Tool that can cut both ways  —  Creating Wealth or Causing Harm"
+      - **Dollar**: "Dollar"
+  - **Group 1437254770** (GROUP)
+  - **Group 1437254772** (GROUP)
+  - **Group 1437254774** (GROUP)
+    - **About Us**: "About Us"
+    - **Group 1437254773** (GROUP)
+      - **Group 1437254776** (GROUP)
+      - **The Finance Club of Birla Institute of Technology, Mesra is a student-led community that promotes financial literacy and practical understanding of finance. It provides students with exposure to financial markets, investment strategies, corporate finance, and economic trends through workshops, discussions, and real-world case studies. The club aims to bridge the gap between academic learning and industry application while helping members develop analytical, professional, and decision-making skills essential for careers in finance and related fields.**: "The Finance Club of Birla Institute of Technology, Mesra is a student-led community that promotes financial literacy and practical understanding of finance. It provides students with exposure to financial markets, investment strategies, corporate finance, and economic trends through workshops, discussions, and real-world case studies. The club aims to bridge the gap between academic learning and industry application while helping members develop analytical, professional, and decision-making skills essential for careers in finance and related fields."
+  - **Our Field Of Interest**: "Our Field Of Interest"
+  - **Service** (GROUP)
+    - **Group 1437254778** (GROUP)
+      - **Corporate Strategy**: "Corporate Strategy"
+      - **Understand how organizations plan, compete, and grow in dynamic markets.**: "Understand how organizations plan, compete, and grow in dynamic markets."
+      - **Learn More**: "Learn More"
+    - **Icon** (GROUP)
+      - **Mask group** (GROUP)
+  - **Service** (GROUP)
+    - **Group 1437254779** (GROUP)
+      - **Personal Finance**: "Personal Finance"
+      - **Build practical skills to manage money, savings, and long-term financial goals.**: "Build practical skills to manage money, savings, and long-term financial goals."
+      - **Learn More**: "Learn More"
+    - **Icon** (GROUP)
+      - **Group 2085666563** (GROUP)
+  - **Service** (GROUP)
+    - **Group 1437254777** (GROUP)
+      - **Investements**: "Investements"
+      - **Explore financial markets, asset classes, and risk-return decision making.**: "Explore financial markets, asset classes, and risk-return decision making."
+      - **Learn More**: "Learn More"
+    - **Icon** (GROUP)
+      - **Mask group** (GROUP)
+  - **Group 1707481331** (GROUP)
+  - **Group 1707481332** (GROUP)
+  - **check out our photo gallery**: "check out our photo gallery"
+  - **capturing moments. preserving stories**: "capturing moments. preserving stories"
+  - **Group 1437254685** (GROUP)
+    - **Group 1437254681** (GROUP)
+      - **photo gallery**: "photo gallery"
+
+## Desktop - 7 (FRAME)
+  - **finstreet**: "finstreet"
+  - **Group 1437254771** (GROUP)
+    - **Group 1437254775** (GROUP)
+  - **FINANCE**: "FINANCE"
+  - **club**: "club"
+  - **presents**: "presents"
+  - **Group 1437254770** (GROUP)
+  - **Group 1437254772** (GROUP)
+  - **Group 1707481334** (GROUP)
+  - **Group 1437254774** (GROUP)
+    - **About Us**: "About Us"
+    - **Group 1437254773** (GROUP)
+      - **Group 1437254776** (GROUP)
+      - **The Finance Club of Birla Institute of Technology, Mesra is a student-led community that promotes financial literacy and practical understanding of finance. It provides students with exposure to financial markets, investment strategies, corporate finance, and economic trends through workshops, discussions, and real-world case studies. The club aims to bridge the gap between academic learning and industry application while helping members develop analytical, professional, and decision-making skills essential for careers in finance and related fields.**: "The Finance Club of Birla Institute of Technology, Mesra is a student-led community that promotes financial literacy and practical understanding of finance. It provides students with exposure to financial markets, investment strategies, corporate finance, and economic trends through workshops, discussions, and real-world case studies. The club aims to bridge the gap between academic learning and industry application while helping members develop analytical, professional, and decision-making skills essential for careers in finance and related fields."
+  - **Our Field Of Interest**: "Our Field Of Interest"
+  - **Group 2085666572** (GROUP)
+    - **Services** (GROUP)
+      - **Service** (GROUP)
+        - **Group 1437254778** (GROUP)
+          - **Corporate Strategy**: "Corporate Strategy"
+          - **Understand how organizations plan, compete, and grow in dynamic markets.**: "Understand how organizations plan, compete, and grow in dynamic markets."
+          - **Learn More**: "Learn More"
+        - **Icon** (GROUP)
+          - **Mask group** (GROUP)
+      - **Service** (GROUP)
+        - **Group 1437254779** (GROUP)
+          - **Personal Finance**: "Personal Finance"
+          - **Build practical skills to manage money, savings, and long-term financial goals.**: "Build practical skills to manage money, savings, and long-term financial goals."
+          - **Learn More**: "Learn More"
+        - **Icon** (GROUP)
+          - **Group 2085666563** (GROUP)
+      - **Service** (GROUP)
+        - **Group 1437254777** (GROUP)
+          - **Investements**: "Investements"
+          - **Explore financial markets, asset classes, and risk-return decision making.**: "Explore financial markets, asset classes, and risk-return decision making."
+          - **Learn More**: "Learn More"
+        - **Icon** (GROUP)
+          - **Mask group** (GROUP)
+    - **Group 1707481331** (GROUP)
+    - **Group 1707481332** (GROUP)
+  - **Group 2085666570** (GROUP)
+  - **Property 1=Default** (COMPONENT)
+    - **Stars** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+    - **Devon Lane**: "Devon Lane"
+    - **Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu dapibus.**: "Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu dapibus."
+  - **Property 1=Variant4** (COMPONENT)
+    - **Stars** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+    - **Amy Goldsberg**: "Amy Goldsberg"
+    - **Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu dapibus.**: "Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu dapibus."
+  - **Property 1=Variant4** (COMPONENT)
+    - **Stars** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+      - **icon/toggle/star_purple500_24px** (INSTANCE)
+    - **Esther Howard**: "Esther Howard"
+    - **Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu dapibus.**: "Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu dapibus."
+  - **Group 2085666571** (GROUP)
+  - **Group 1707481333** (GROUP)
+  - **review on our last event**: "review on our last event"
+  - **check out our photo gallery**: "check out our photo gallery"
+  - **capturing moments preserving stories**: "capturing moments preserving stories"
+  - **Group 1437254685** (GROUP)
+    - **Group 1437254681** (GROUP)
+      - **photo gallery**: "photo gallery"
+  - **Group 2085666592** (GROUP)
+  - **Group 12** (GROUP)
+    - **Events**: "Events"
+    - **Photo Gallery**: "Photo Gallery"
+    - **Registrations**: "Registrations"
+    - **User Management**: "User Management"
+    - **Features**: "Features"
+    - **About Us**: "About Us"
+    - **Careers**: "Careers"
+    - **club**: "club"
+    - **Contact Us**: "Contact Us"
+    - **financeclub@bitmesra.ac.in**: "financeclub@bitmesra.ac.in"
+    - **Register For Our events Now**: "Register For Our events Now"
+    - **Contact Us**: "Contact Us"
+    - **Stay up to date**: "Stay up to date"
+    - **+91 95469 49124**: "+91 95469 49124"
+    - **BIT Mesra Road, Mesra, Ranchi- 835215, Jharkhand , India**: "BIT Mesra Road, Mesra, Ranchi- 835215, Jharkhand , India"
+    - **email icon** (INSTANCE)
+      - **Email**: "Email"
+      - **icon/navigation/arrow_forward_24px** (FRAME)
+  - **Group 13** (GROUP)
+    - **Logo** (GROUP)
+    - **Home**: "Home"
+    - **About**: "About"
+    - **Events**: "Events"
+    - **Get Heynds CTA** (GROUP)
+      - **Join Us**: "Join Us"
+    - **Language Dropdown CTA** (GROUP)
+      - **Contact**: "Contact"
+  - **Group 1437254769** (GROUP)
+    - **Group 1437254768** (GROUP)
+      - **Group 1437254767** (GROUP)
+        - **Group 1437254765** (GROUP)
+          - **Group 1437254685** (GROUP)
+            - **Group 1437254681** (GROUP)
+              - **Sign Up Your Team**: "Sign Up Your Team"
+        - **Group 1437254766** (GROUP)
+          - **Group 1437254685** (GROUP)
+            - **Group 1437254681** (GROUP)
+              - **Contact Us**: "Contact Us"
+      - **A Tool that can cut both ways — Creating Wealth or Causing Harm**: "A Tool that can cut both ways  —  Creating Wealth or Causing Harm"
+      - **Dollar**: "Dollar"
+
+## Service (GROUP)
+  - **Group 1437254777** (GROUP)
+    - **Entrepreneurship**: "Entrepreneurship"
+    - **Learn how ideas turn into sustainable businesses through strategy, innovation, and execution.**: "Learn how ideas turn into sustainable businesses through strategy, innovation, and execution."
+    - **Learn More**: "Learn More"
+  - **Icon** (GROUP)
+    - **Mask group** (GROUP)
+
+## Logo (GROUP)
+
+## Mask group (GROUP)
+
+## Mask group (GROUP)
+
+## Mask group (GROUP)
+
+## Group 2085666563 (GROUP)
+
+## Group 2085666564 (GROUP)
+
+## Desktop - 8 (FRAME)
+  - **community**: "community"
+  - **we value**: "we value"
+  - **use the hastage #financeclub to be featured**: "use the hastage #financeclub to be featured"
+  - **Group 1707481334** (GROUP)
+  - **Group 12** (GROUP)
+    - **Events**: "Events"
+    - **Photo Gallery**: "Photo Gallery"
+    - **Registrations**: "Registrations"
+    - **User Management**: "User Management"
+    - **Features**: "Features"
+    - **About Us**: "About Us"
+    - **Careers**: "Careers"
+    - **club**: "club"
+    - **Contact Us**: "Contact Us"
+    - **financeclub@bitmesra.ac.in**: "financeclub@bitmesra.ac.in"
+    - **Register For Our events Now**: "Register For Our events Now"
+    - **Contact Us**: "Contact Us"
+    - **Stay up to date**: "Stay up to date"
+    - **+91 95469 49124**: "+91 95469 49124"
+    - **BIT Mesra Road, Mesra, Ranchi- 835215, Jharkhand , India**: "BIT Mesra Road, Mesra, Ranchi- 835215, Jharkhand , India"
+    - **email icon** (INSTANCE)
+      - **Email**: "Email"
+      - **icon/navigation/arrow_forward_24px** (FRAME)
+  - **Published On: 27 dec 2025**: "Published On: 27 dec 2025"
+  - **Published On: 27 dec 2025**: "Published On: 27 dec 2025"
+  - **Published On: 27 dec 2025**: "Published On: 27 dec 2025"
+  - **Published On: 27 dec 2025**: "Published On: 27 dec 2025"
+  - **Published On: 27 dec 2025**: "Published On: 27 dec 2025"
+  - **Published On: 27 dec 2025**: "Published On: 27 dec 2025"
+  - **Published On: 27 dec 2025**: "Published On: 27 dec 2025"
+  - **Load more**: "Load more"
+  - **Published On: 27 dec 2025**: "Published On: 27 dec 2025"
+  - **Published On: 27 dec 2025**: "Published On: 27 dec 2025"
+  - **Published On: 27 dec 2025**: "Published On: 27 dec 2025"
+  - **Published On: 27 dec 2025**: "Published On: 27 dec 2025"
+  - **Published On: 27 dec 2025**: "Published On: 27 dec 2025"
+  - **icon/navigation/arrow_forward_24px** (INSTANCE)
+  - **Group 13** (GROUP)
+    - **Logo** (GROUP)
+    - **Home**: "Home"
+    - **About**: "About"
+    - **Events**: "Events"
+    - **Get Heynds CTA** (GROUP)
+      - **Join Us**: "Join Us"
+    - **Language Dropdown CTA** (GROUP)
+      - **Contact**: "Contact"
+
+## Desktop - 9 (FRAME)
+  - **Where Strategy meets Uncertainty and Ideas turn into Decisive Solutions.**: "Where Strategy meets Uncertainty and Ideas turn into Decisive Solutions."
+  - **Introducing our**: "Introducing our"
+  - **flagship**: "flagship"
+  - **enigma**: "enigma"
+  - **event**: "event"
+  - **Group 1707481333** (GROUP)
+  - **Group 2085666574** (GROUP)
+    - **icon/communication/location_on_24px** (INSTANCE)
+    - **18th JAN 2026**: "18th JAN 2026"
+    - **SEMINAR HALL 1 , RND Building BIT Mesra , Ranchi**: "SEMINAR HALL 1 , RND Building  BIT Mesra , Ranchi"
+  - **Group 2085666575** (GROUP)
+    - **Group 2085666580** (GROUP)
+      - **Group 2085666576** (GROUP)
+        - **20**: "20"
+        - **Days**: "Days"
+      - **Group 2085666577** (GROUP)
+        - **16**: "16"
+        - **Hours**: "Hours"
+      - **Group 2085666578** (GROUP)
+        - **43**: "43"
+        - **Mins**: "Mins"
+      - **Group 2085666579** (GROUP)
+  - **Group 2085666588** (GROUP)
+    - **19 th Jan // Room no.-234**: "19 th Jan // Room no.-234"
+    - **balance numbers, tactics, and team dynamics.**: "balance numbers, tactics, and team dynamics."
+    - **behind the stumps**: "behind the stumps"
+    - **Group 2085666583** (GROUP)
+      - **Group 1437254685** (GROUP)
+        - **Group 1437254681** (GROUP)
+          - **view**: "view"
+  - **Group 1437254776** (GROUP)
+  - **enigma - the art of strategic thinking**: "enigma - the art of strategic thinking"
+  - **Our flagship case study event built for minds that question, analyze, and lead.**: "Our flagship case study event built for minds that question, analyze, and lead."
+  - **ENIGMA is a case study–driven experience that pushes participants to unravel ambiguity, evaluate possibilities, and craft impactful solutions. It celebrates logic, foresight, and the ability to navigate complexity with confidence**: "ENIGMA is a case study–driven experience that pushes participants to unravel ambiguity, evaluate possibilities, and craft impactful solutions. It celebrates logic, foresight, and the ability to navigate complexity with confidence"
+  - **date - 18th jan 2026 time - 11:00 a.m. venue- seminar hall 1**: "date - 18th jan 2026 time - 11:00 a.m. venue- seminar hall 1"
+  - **Group 2085666589** (GROUP)
+  - **Group 2085666590** (GROUP)
+  - **Group 1437254685** (GROUP)
+    - **Group 1437254681** (GROUP)
+      - **view more**: "view more"
+  - **Group 2085666591** (GROUP)
+    - **Group 1437254681** (GROUP)
+      - **view more**: "view more"
+  - **upcoming events**: "upcoming events"
+  - **Group 1437254685** (GROUP)
+    - **Group 1437254681** (GROUP)
+      - **view**: "view"
+  - **18 th Jan // Seminar Hall 1**: "18 th Jan // Seminar Hall 1"
+  - **question, analyze, and lead**: "question, analyze, and lead"
+  - **enigma**: "enigma"
+  - **19 th Jan // Room no.-233A**: "19 th Jan // Room no.-233A"
+  - **observe, assess, and decide**: "observe, assess, and decide"
+  - **estimania**: "estimania"
+  - **Group 1437254685** (GROUP)
+    - **Group 1437254681** (GROUP)
+      - **view**: "view"
+  - **Group 2085666586** (GROUP)
+  - **our speakers**: "our speakers"
+  - **// all topics**: "// all topics"
+  - **stock market**: "stock market"
+  - **personal finance**: "personal finance"
+  - **entrepreneurship**: "entrepreneurship"
+  - **koyesha mukherjee**: "koyesha mukherjee"
+  - **virendra verma**: "virendra verma"
+  - **uzair ahamad**: "uzair ahamad"
+  - **sakchi jain**: "sakchi jain"
+  - **abhishek kumar**: "abhishek kumar"
+  - **Group 2085666576** (GROUP)
+    - **Group 1437254685** (GROUP)
+      - **Group 1437254681** (GROUP)
+        - **enroll now**: "enroll now"
+  - **Group 1437254766** (GROUP)
+    - **Group 1437254685** (GROUP)
+      - **Group 1437254681** (GROUP)
+        - **Contact Us**: "Contact Us"
+  - **check out our photo gallery**: "check out our photo gallery"
+  - **capturing moments. preserving stories**: "capturing moments. preserving stories"
+  - **Group 1437254685** (GROUP)
+    - **Group 1437254681** (GROUP)
+      - **photo gallery**: "photo gallery"
+  - **Group 2085666587** (GROUP)
+  - **Group 2085666592** (GROUP)
+  - **Group 12** (GROUP)
+    - **Events**: "Events"
+    - **Photo Gallery**: "Photo Gallery"
+    - **Registrations**: "Registrations"
+    - **User Management**: "User Management"
+    - **Features**: "Features"
+    - **About Us**: "About Us"
+    - **Careers**: "Careers"
+    - **club**: "club"
+    - **Contact Us**: "Contact Us"
+    - **financeclub@bitmesra.ac.in**: "financeclub@bitmesra.ac.in"
+    - **Register For Our events Now**: "Register For Our events Now"
+    - **Contact Us**: "Contact Us"
+    - **Stay up to date**: "Stay up to date"
+    - **+91 95469 49124**: "+91 95469 49124"
+    - **BIT Mesra Road, Mesra, Ranchi- 835215, Jharkhand , India**: "BIT Mesra Road, Mesra, Ranchi- 835215, Jharkhand , India"
+    - **email icon** (INSTANCE)
+      - **Email**: "Email"
+      - **icon/navigation/arrow_forward_24px** (FRAME)
+  - **Group 13** (GROUP)
+    - **Logo** (GROUP)
+    - **Home**: "Home"
+    - **About**: "About"
+    - **Events**: "Events"
+    - **Get Heynds CTA** (GROUP)
+      - **Join Us**: "Join Us"
+    - **Language Dropdown CTA** (GROUP)
+      - **Contact**: "Contact"
+
+## Desktop - 11 (FRAME)
+  - **How sharp is your instinct for value?**: "How sharp is your instinct for value?"
+  - **Introducing**: "Introducing"
+  - **finstreet**: "finstreet"
+  - **estimania**: "estimania"
+  - **event**: "event"
+  - **Group 1707481333** (GROUP)
+  - **Group 2085666574** (GROUP)
+    - **icon/communication/location_on_24px** (INSTANCE)
+    - **19th JAN 2026**: "19th JAN 2026"
+    - **Room no.- 233A , Main Building BIT Mesra , Ranchi**: "Room no.- 233A , Main Building  BIT Mesra , Ranchi"
+  - **Group 2085666575** (GROUP)
+    - **Group 2085666580** (GROUP)
+      - **Group 2085666576** (GROUP)
+        - **21**: "21"
+        - **Days**: "Days"
+      - **Group 2085666577** (GROUP)
+        - **12**: "12"
+        - **Hours**: "Hours"
+      - **Group 2085666578** (GROUP)
+        - **20**: "20"
+        - **Mins**: "Mins"
+      - **Group 2085666579** (GROUP)
+  - **Group 1437254685** (GROUP)
+    - **Group 1437254681** (GROUP)
+      - **view more**: "view more"
+  - **upcoming events**: "upcoming events"
+  - **Group 1437254685** (GROUP)
+    - **Group 1437254681** (GROUP)
+      - **view**: "view"
+  - **enigma**: "enigma"
+  - **19 th Jan // Room no.-233A**: "19 th Jan // Room no.-233A"
+  - **observe, assess, and decide**: "observe, assess, and decide"
+  - **estimania**: "estimania"
+  - **Group 1437254685** (GROUP)
+    - **Group 1437254681** (GROUP)
+      - **view**: "view"
+  - **18 th Jan // Seminar Hall 1**: "18 th Jan // Seminar Hall 1"
+  - **question, analyze, and lead**: "question, analyze, and lead"
+  - **Group 2085666586** (GROUP)
+    - **19 th Jan // Room no.-234**: "19 th Jan // Room no.-234"
+    - **balance numbers, tactics, and team dynamics.**: "balance numbers, tactics, and team dynamics."
+    - **behind the stumps**: "behind the stumps"
+    - **Group 2085666583** (GROUP)
+      - **Group 1437254685** (GROUP)
+        - **Group 1437254681** (GROUP)
+          - **view**: "view"
+  - **Group 2085666587** (GROUP)
+    - **19 th Jan // Room no.-234**: "19 th Jan // Room no.-234"
+    - **balance numbers, tactics, and team dynamics.**: "balance numbers, tactics, and team dynamics."
+    - **behind the stumps**: "behind the stumps"
+    - **Group 2085666583** (GROUP)
+      - **Group 1437254685** (GROUP)
+        - **Group 1437254681** (GROUP)
+          - **view**: "view"
+  - **Group 2085666593** (GROUP)
+  - **Group 2085666594** (GROUP)
+    - **Group 1437254681** (GROUP)
+      - **view more**: "view more"
+  - **Group 2085666595** (GROUP)
+  - **our speakers**: "our speakers"
+  - **// all topics**: "// all topics"
+  - **stock market**: "stock market"
+  - **personal finance**: "personal finance"
+  - **entrepreneurship**: "entrepreneurship"
+  - **koyesha mukherjee**: "koyesha mukherjee"
+  - **virendra verma**: "virendra verma"
+  - **uzair ahamad**: "uzair ahamad"
+  - **sakchi jain**: "sakchi jain"
+  - **abhishek kumar**: "abhishek kumar"
+  - **Group 2085666581** (GROUP)
+    - **Group 1437254776** (GROUP)
+    - **ESTIMANIA — The Science of Smart Estimation**: "ESTIMANIA — The Science of Smart Estimation"
+    - **A fast-paced pricing challenge built for minds that observe, assess, and decide.**: "A fast-paced pricing challenge built for minds that observe, assess, and decide."
+    - **ESTIMANIA is an interactive “guess the price” event that challenges participants to analyze products, gauge market value, and make accurate estimations. It celebrates intuition sharpened by logic, attention to detail, and the ability to judge value under time pressure.**: "ESTIMANIA is an interactive “guess the price” event that challenges participants to analyze products, gauge market value, and make accurate estimations. It celebrates intuition sharpened by logic, attention to detail, and the ability to judge value under time pressure."
+    - **Group 1437254766** (GROUP)
+      - **Group 1437254685** (GROUP)
+        - **Group 1437254681** (GROUP)
+          - **Contact Us**: "Contact Us"
+    - **date - 19th jan 2026 time - 12:00 p.m. venue- Room no. - 233a, main building**: "date - 19th jan 2026 time - 12:00 p.m. venue- Room no. - 233a, main building"
+    - **Group 2085666576** (GROUP)
+      - **Group 1437254685** (GROUP)
+        - **Group 1437254681** (GROUP)
+          - **enroll now**: "enroll now"
+  - **check out our photo gallery**: "check out our photo gallery"
+  - **capturing moments. preserving stories**: "capturing moments. preserving stories"
+  - **Group 2085666596** (GROUP)
+    - **Group 1437254681** (GROUP)
+      - **photo gallery**: "photo gallery"
+  - **Group 2085666597** (GROUP)
+  - **Group 12** (GROUP)
+    - **Events**: "Events"
+    - **Photo Gallery**: "Photo Gallery"
+    - **Registrations**: "Registrations"
+    - **User Management**: "User Management"
+    - **Features**: "Features"
+    - **About Us**: "About Us"
+    - **Careers**: "Careers"
+    - **club**: "club"
+    - **Contact Us**: "Contact Us"
+    - **financeclub@bitmesra.ac.in**: "financeclub@bitmesra.ac.in"
+    - **Register For Our events Now**: "Register For Our events Now"
+    - **Contact Us**: "Contact Us"
+    - **Stay up to date**: "Stay up to date"
+    - **+91 95469 49124**: "+91 95469 49124"
+    - **BIT Mesra Road, Mesra, Ranchi- 835215, Jharkhand , India**: "BIT Mesra Road, Mesra, Ranchi- 835215, Jharkhand , India"
+    - **email icon** (INSTANCE)
+      - **Email**: "Email"
+      - **icon/navigation/arrow_forward_24px** (FRAME)
+  - **Group 2085666592** (GROUP)
+  - **Group 13** (GROUP)
+    - **Logo** (GROUP)
+    - **Home**: "Home"
+    - **About**: "About"
+    - **Events**: "Events"
+    - **Get Heynds CTA** (GROUP)
+      - **Join Us**: "Join Us"
+    - **Language Dropdown CTA** (GROUP)
+      - **Contact**: "Contact"
+
+## Desktop - 12 (FRAME)
+  - **where strategy meets the spirit of cricket . build smart . bid smarter.**: "where strategy meets the spirit of cricket .  build smart . bid smarter."
+  - **Introducing**: "Introducing"
+  - **finstreet**: "finstreet"
+  - **behind the stumps**: "behind the stumps"
+  - **event**: "event"
+  - **Group 1707481333** (GROUP)
+  - **Group 2085666574** (GROUP)
+    - **icon/communication/location_on_24px** (INSTANCE)
+    - **19th JAN 2026**: "19th JAN 2026"
+    - **Room no.- 234 , Main Building BIT Mesra , Ranchi**: "Room no.- 234 , Main Building  BIT Mesra , Ranchi"
+  - **Group 2085666575** (GROUP)
+    - **Group 2085666580** (GROUP)
+      - **Group 2085666576** (GROUP)
+        - **21**: "21"
+        - **Days**: "Days"
+      - **Group 2085666577** (GROUP)
+        - **14**: "14"
+        - **Hours**: "Hours"
+      - **Group 2085666578** (GROUP)
+        - **20**: "20"
+        - **Mins**: "Mins"
+      - **Group 2085666579** (GROUP)
+  - **Group 2085666581** (GROUP)
+    - **Group 1437254776** (GROUP)
+    - **BEHIND THE STUMPS — The Strategy Behind the Game**: "BEHIND THE STUMPS — The Strategy Behind the Game"
+    - **A cricket auction challenge built for minds that balance numbers, tactics, and team dynamics.**: "A cricket auction challenge built for minds that balance numbers, tactics, and team dynamics."
+    - **Behind the Stumps is a cricket auction–based event that tests participants on strategic bidding, squad planning, and real-time decision-making. Players must evaluate performance metrics, manage budgets, and build balanced teams under competitive pressure.**: "Behind the Stumps is a cricket auction–based event that tests participants on strategic bidding, squad planning, and real-time decision-making. Players must evaluate performance metrics, manage budgets, and build balanced teams under competitive pressure."
+    - **Group 1437254766** (GROUP)
+      - **Group 1437254685** (GROUP)
+        - **Group 1437254681** (GROUP)
+          - **Contact Us**: "Contact Us"
+    - **date - 19th jan 2026 time - 2:00 p.m. venue- Room no. - 234, main building**: "date - 19th jan 2026 time - 2:00 p.m. venue- Room no. - 234, main building"
+    - **Group 2085666576** (GROUP)
+      - **Group 1437254685** (GROUP)
+        - **Group 1437254681** (GROUP)
+          - **enroll now**: "enroll now"
+  - **Group 1437254685** (GROUP)
+    - **Group 1437254681** (GROUP)
+      - **view more**: "view more"
+  - **upcoming events**: "upcoming events"
+  - **Group 1437254685** (GROUP)
+    - **Group 1437254681** (GROUP)
+      - **view**: "view"
+  - **enigma**: "enigma"
+  - **Group 2085666585** (GROUP)
+    - **19 th Jan // Room no.-233A**: "19 th Jan // Room no.-233A"
+    - **observe, assess, and decide**: "observe, assess, and decide"
+    - **estimania**: "estimania"
+    - **Group 2085666583** (GROUP)
+      - **Group 1437254685** (GROUP)
+        - **Group 1437254681** (GROUP)
+          - **view**: "view"
+  - **Group 2085666586** (GROUP)
+    - **19 th Jan // Room no.-234**: "19 th Jan // Room no.-234"
+    - **balance numbers, tactics, and team dynamics.**: "balance numbers, tactics, and team dynamics."
+    - **behind the stumps**: "behind the stumps"
+    - **Group 2085666583** (GROUP)
+      - **Group 1437254685** (GROUP)
+        - **Group 1437254681** (GROUP)
+          - **view**: "view"
+  - **18 th Jan // Seminar Hall 1**: "18 th Jan // Seminar Hall 1"
+  - **question, analyze, and lead**: "question, analyze, and lead"
+  - **Group 2085666590** (GROUP)
+  - **Group 2085666591** (GROUP)
+    - **Group 1437254681** (GROUP)
+      - **view more**: "view more"
+  - **Group 2085666592** (GROUP)
+  - **our speakers**: "our speakers"
+  - **// all topics**: "// all topics"
+  - **stock market**: "stock market"
+  - **personal finance**: "personal finance"
+  - **entrepreneurship**: "entrepreneurship"
+  - **koyesha mukherjee**: "koyesha mukherjee"
+  - **virendra verma**: "virendra verma"
+  - **uzair ahamad**: "uzair ahamad"
+  - **sakchi jain**: "sakchi jain"
+  - **abhishek kumar**: "abhishek kumar"
+  - **check out our photo gallery**: "check out our photo gallery"
+  - **capturing moments. preserving stories**: "capturing moments. preserving stories"
+  - **Group 2085666596** (GROUP)
+    - **Group 1437254681** (GROUP)
+      - **photo gallery**: "photo gallery"
+  - **Group 2085666597** (GROUP)
+  - **Group 12** (GROUP)
+    - **Events**: "Events"
+    - **Photo Gallery**: "Photo Gallery"
+    - **Registrations**: "Registrations"
+    - **User Management**: "User Management"
+    - **Features**: "Features"
+    - **About Us**: "About Us"
+    - **Careers**: "Careers"
+    - **club**: "club"
+    - **Contact Us**: "Contact Us"
+    - **financeclub@bitmesra.ac.in**: "financeclub@bitmesra.ac.in"
+    - **Register For Our events Now**: "Register For Our events Now"
+    - **Contact Us**: "Contact Us"
+    - **Stay up to date**: "Stay up to date"
+    - **+91 95469 49124**: "+91 95469 49124"
+    - **BIT Mesra Road, Mesra, Ranchi- 835215, Jharkhand , India**: "BIT Mesra Road, Mesra, Ranchi- 835215, Jharkhand , India"
+    - **email icon** (INSTANCE)
+      - **Email**: "Email"
+      - **icon/navigation/arrow_forward_24px** (FRAME)
+  - **Group 2085666587** (GROUP)
+  - **Group 13** (GROUP)
+    - **Logo** (GROUP)
+    - **Home**: "Home"
+    - **About**: "About"
+    - **Events**: "Events"
+    - **Get Heynds CTA** (GROUP)
+      - **Join Us**: "Join Us"
+    - **Language Dropdown CTA** (GROUP)
+      - **Contact**: "Contact"
+
+## Desktop - 10 (FRAME)
+  - **Where Strategy meets Uncertainty and Ideas turn into Decisive Solutions.**: "Where Strategy meets Uncertainty and Ideas turn into Decisive Solutions."
+  - **Introducing our**: "Introducing our"
+  - **Group 2085666569** (GROUP)
+    - **Logo** (GROUP)
+    - **Home**: "Home"
+    - **About**: "About"
+    - **Events**: "Events"
+    - **Get Heynds CTA** (GROUP)
+      - **Join Us**: "Join Us"
+    - **Language Dropdown CTA** (GROUP)
+      - **Contact**: "Contact"
+  - **flagship**: "flagship"
+  - **enigma**: "enigma"
+  - **event**: "event"
+  - **Group 1707481333** (GROUP)

@@ -19,10 +19,9 @@ export const Navbar = () => {
             <FloatingDock
                 items={[
                     { title: "Home", icon: <Home className="h-full w-full" />, href: "/" },
-                    { title: "About", icon: <Info className="h-full w-full" />, href: "#about" },
-                    { title: "Events", icon: <Calendar className="h-full w-full" />, href: "#events" },
-                    { title: "Research", icon: <BarChart3 className="h-full w-full" />, href: "#research" },
-                    { title: "News", icon: <Newspaper className="h-full w-full" />, href: "#news" },
+                    { title: "About", icon: <Info className="h-full w-full" />, href: "/about" },
+                    { title: "Events", icon: <Calendar className="h-full w-full" />, href: "/events" },
+                    { title: "Gallery", icon: <Newspaper className="h-full w-full" />, href: "/gallery" },
                 ]}
             />
         </div>

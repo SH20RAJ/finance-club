@@ -57,14 +57,14 @@ export default function Home() {
          </div>
       </section>
 
-      {/* GALLERY SECTION */}
+     {/* GALLERY SECTION */}
       <section className="relative z-10 py-20 bg-white dark:bg-zinc-950 border-y-2 border-zinc-900 dark:border-zinc-800">
          <Gallery4 
            title="Our Memories" 
            description="Snapshots from the trading floor, hackathons, and late-night analysis sessions."
            items={[
-             { id: "1", title: "FinStreet '25", description: "The biggest financial festival of the year.", image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=2000", href: "/events" },
-             { id: "2", title: "Crypto Summit", description: "Exploring the future of decentralized finance.", image: "https://images.unsplash.com/photo-1621504450168-b8c437536123?auto=format&fit=crop&q=80&w=2000", href: "/events" },
+             { id: "1", title: "FinStreet '25", description: "The biggest financial festival of the year.", image: "/image.png", href: "/events" },
+             { id: "2", title: "Crypto Summit", description: "Exploring the future of decentralized finance.", image: "/image copy.png", href: "/events" },
              { id: "3", title: "Stock Wars", description: "Live trading simulation with real-time market data.", image: "https://images.unsplash.com/photo-1611974765270-ca12586343bb?auto=format&fit=crop&q=80&w=2000", href: "/events" },
              { id: "4", title: "Guest Lectures", description: "Industry experts sharing their wisdom.", image: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?auto=format&fit=crop&q=80&w=2000", href: "/events" },
              { id: "5", title: "Networking", description: "Connecting future leaders of finance.", image: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&q=80&w=2000", href: "/events" }

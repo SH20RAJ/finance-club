@@ -9,8 +9,8 @@ export default function GalleryPage() {
     {
       title: "2025 Highlights",
       items: [
-         { id: "1", title: "FinStreet '25", description: "The biggest financial festival of the year.", image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=2000", href: "#" },
-         { id: "2", title: "Crypto Summit", description: "Exploring the future of decentralized finance.", image: "https://images.unsplash.com/photo-1621504450168-b8c437536123?auto=format&fit=crop&q=80&w=2000", href: "#" },
+         { id: "1", title: "FinStreet '25", description: "The biggest financial festival of the year.", image: "/image.png", href: "#" },
+         { id: "2", title: "Crypto Summit", description: "Exploring the future of decentralized finance.", image: "/image copy.png", href: "#" },
          { id: "3", title: "Stock Wars", description: "Live trading simulation with real-time market data.", image: "https://images.unsplash.com/photo-1611974765270-ca12586343bb?auto=format&fit=crop&q=80&w=2000", href: "#" },
       ]
     },

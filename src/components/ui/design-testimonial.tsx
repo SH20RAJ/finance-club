@@ -7,22 +7,22 @@ import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from
 
 const testimonials = [
   {
-    quote: "Transformed our entire creative process overnight.",
-    author: "Sarah Chen",
-    role: "Design Director",
-    company: "Linear",
+    quote: "FinPro gave me the edge I needed to crack the JPMC quant interview.",
+    author: "Aditya Raj",
+    role: "Analyst",
+    company: "J.P. Morgan",
   },
   {
-    quote: "The most elegant solution we've ever implemented.",
-    author: "Marcus Webb",
-    role: "Creative Lead",
-    company: "Vercel",
+    quote: "The mock trading sessions are closer to reality than any textbook.",
+    author: "Riya Sharma",
+    role: "Associate",
+    company: "Goldman Sachs",
   },
   {
-    quote: "Pure craftsmanship in every single detail.",
-    author: "Elena Frost",
-    role: "Head of Product",
-    company: "Stripe",
+    quote: "Network, Knowledge, and Net Worth. Started it all here.",
+    author: "Kunal Shah",
+    role: "Founder",
+    company: "FinTech Startup",
   },
 ]
 
@@ -134,7 +134,7 @@ export function Testimonial() {
               <AnimatePresence mode="wait">
                 <motion.blockquote
                   key={activeIndex}
-                  className="text-4xl md:text-5xl font-light text-foreground leading-[1.15] tracking-tight"
+                  className="text-4xl md:text-5xl font-handwritten font-bold text-zinc-900 dark:text-white leading-[1.15] tracking-tight"
                   initial="hidden"
                   animate="visible"
                   exit="exit"

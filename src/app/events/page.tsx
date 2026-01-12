@@ -1,7 +1,11 @@
-'use client';
-
+import type { Metadata } from 'next';
 import { CreativePricing, PricingTier } from "@/components/ui/creative-pricing";
-import { Zap, Trophy, Target, Calendar } from "lucide-react";
+import { Zap, Trophy, Target } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Events | Finance Club",
+  description: "Join our upcoming finance events, competitions, and workshops.",
+};
 
 export default function EventsPage() {
   const events: PricingTier[] = [
@@ -44,7 +48,7 @@ export default function EventsPage() {
            description="Join us for the most exciting financial challenges of the year."
            tiers={events}
          />
-      </section>
+      </div>
 
     </main>
   );

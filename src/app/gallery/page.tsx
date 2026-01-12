@@ -1,6 +1,10 @@
-'use client';
-
+import type { Metadata } from 'next';
 import { Gallery4 } from "@/components/blocks/gallery4";
+
+export const metadata: Metadata = {
+  title: "Gallery | Finance Club",
+  description: "A growing collection of memories from our events and sessions.",
+};
 
 export default function GalleryPage() {
   const years = [
@@ -13,11 +17,10 @@ export default function GalleryPage() {
       ]
     },
     {
-      title: "2024 Memories",
+      title: "2024 Archive",
       items: [
          { id: "4", title: "Guest Lectures", description: "Industry experts sharing their wisdom.", image: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?auto=format&fit=crop&q=80&w=2000", href: "#" },
          { id: "5", title: "Networking", description: "Connecting future leaders of finance.", image: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&q=80&w=2000", href: "#" },
-         { id: "6", title: "Workshops", description: "Hands-on learning sessions.", image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=2000", href: "#" },
       ]
     }
   ];
@@ -29,7 +32,7 @@ export default function GalleryPage() {
          <h1 className="font-handwritten text-[10vw] leading-none font-bold text-center rotate-[-2deg]">
            OUR <span className="text-fin-blue underline decoration-wavy decoration-2">GALLERY</span>
          </h1>
-         <p className="font-handwritten text-xl max-w-2xl mx-auto mt-6 text-zinc-600 dark:text-zinc-400 rotate-[1deg]">
+         <p className="max-w-xl mx-auto text-xl md:text-2xl mt-8 font-handwritten text-zinc-600 dark:text-zinc-400 rotate-[1deg]">
             A visual journey through our events, workshops, and community gatherings.
          </p>
       </div>

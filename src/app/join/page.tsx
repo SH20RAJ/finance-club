@@ -1,12 +1,12 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Navbar } from "@/components/ui/Navbar";
+import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/layout/Footer";
 
 export default function JoinPage() {
   return (
-    <main className="min-h-screen bg-fin-dark text-white">
+    <main className="min-h-screen bg-zinc-50 dark:bg-black text-zinc-900 dark:text-zinc-50">
       <Navbar />
       
       <section className="pt-40 pb-20 container max-w-3xl mx-auto px-6">
@@ -15,10 +15,10 @@ export default function JoinPage() {
            animate={{ opacity: 1, y: 0 }}
            className="text-center mb-12"
          >
-             <h1 className="font-heading text-5xl md:text-7xl font-bold mb-4">
-                JOIN THE <span className="text-fin-red">REVOLUTION</span>
+             <h1 className="font-handwritten text-[10vw] md:text-[5rem] leading-none font-bold mb-4 rotate-[-2deg]">
+                JOIN THE <span className="text-fin-red underline decoration-wavy">REVOLUTION</span>
              </h1>
-             <p className="text-white/60 text-lg">
+             <p className="font-handwritten text-2xl text-zinc-600 dark:text-zinc-400 rotate-[1deg]">
                 Become a part of the most prestigious finance community.
              </p>
          </motion.div>
@@ -27,41 +27,43 @@ export default function JoinPage() {
            initial={{ opacity: 0 }}
            animate={{ opacity: 1 }}
            transition={{ delay: 0.2 }}
-           className="glass p-10 rounded-3xl space-y-8"
+           className="bg-white dark:bg-zinc-900 border-2 border-zinc-900 dark:border-white p-10 shadow-[8px_8px_0px_0px] shadow-zinc-900 dark:shadow-white space-y-8"
          >
             {/* Personal Details */}
             <div className="space-y-6">
-               <h3 className="text-xl font-heading font-bold border-b border-white/10 pb-2 mb-6">Personal Details</h3>
+               <h3 className="text-3xl font-handwritten font-bold border-b-2 border-zinc-900 dark:border-white pb-2 mb-6 text-fin-blue">Personal Details</h3>
                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-xs uppercase tracking-widest text-white/50 mb-2">Full Name</label>
-                    <input type="text" className="w-full bg-black/20 border border-white/10 rounded-lg p-3 text-white focus:border-fin-red outline-none transition-colors" />
+                    <label className="block text-lg font-handwritten font-bold mb-2">Full Name</label>
+                    <input type="text" className="w-full bg-zinc-50 dark:bg-zinc-800 border-2 border-zinc-900 dark:border-white p-3 font-sans focus:outline-none focus:shadow-[4px_4px_0px_0px] focus:shadow-fin-blue transition-all" />
                   </div>
                   <div>
-                    <label className="block text-xs uppercase tracking-widest text-white/50 mb-2">Roll Number</label>
-                    <input type="text" className="w-full bg-black/20 border border-white/10 rounded-lg p-3 text-white focus:border-fin-red outline-none transition-colors" />
+                    <label className="block text-lg font-handwritten font-bold mb-2">Roll Number</label>
+                    <input type="text" className="w-full bg-zinc-50 dark:bg-zinc-800 border-2 border-zinc-900 dark:border-white p-3 font-sans focus:outline-none focus:shadow-[4px_4px_0px_0px] focus:shadow-fin-blue transition-all" />
                   </div>
                </div>
                <div>
-                  <label className="block text-xs uppercase tracking-widest text-white/50 mb-2">Email Address</label>
-                  <input type="email" className="w-full bg-black/20 border border-white/10 rounded-lg p-3 text-white focus:border-fin-red outline-none transition-colors" />
+                  <label className="block text-lg font-handwritten font-bold mb-2">Email Address</label>
+                  <input type="email" className="w-full bg-zinc-50 dark:bg-zinc-800 border-2 border-zinc-900 dark:border-white p-3 font-sans focus:outline-none focus:shadow-[4px_4px_0px_0px] focus:shadow-fin-blue transition-all" />
                </div>
             </div>
 
             {/* Interest */}
             <div className="space-y-6">
-                <h3 className="text-xl font-heading font-bold border-b border-white/10 pb-2 mb-6">Domain Interest</h3>
+                <h3 className="text-3xl font-handwritten font-bold border-b-2 border-zinc-900 dark:border-white pb-2 mb-6 text-fin-blue">Domain Interest</h3>
                 <div className="grid grid-cols-2 gap-4">
                    {['Stock Market', 'Crypto', 'Investment Banking', 'Content Writing', 'Design', 'Web Dev'].map((interest) => (
-                      <label key={interest} className="flex items-center gap-3 cursor-pointer group">
-                         <input type="checkbox" className="w-5 h-5 accent-fin-red bg-white/10 border-white/20 rounded focus:ring-fin-red" />
-                         <span className="text-sm group-hover:text-white transition-colors text-white/70">{interest}</span>
+                      <label key={interest} className="flex items-center gap-3 cursor-pointer group p-3 border-2 border-transparent hover:border-zinc-900 dark:hover:border-white transition-all rounded-lg select-none">
+                         <div className="w-6 h-6 border-2 border-zinc-900 dark:border-white flex items-center justify-center bg-white dark:bg-zinc-800 group-hover:bg-fin-red group-hover:border-fin-red transition-colors">
+                            <input type="checkbox" className="opacity-0 w-full h-full cursor-pointer" />
+                         </div>
+                         <span className="font-handwritten text-xl">{interest}</span>
                       </label>
                    ))}
                 </div>
             </div>
 
-            <button type="button" className="w-full bg-fin-red hover:bg-red-600 text-white font-bold text-lg py-4 rounded-xl shadow-lg shadow-fin-red/20 transition-all mt-8">
+            <button type="button" className="w-full bg-fin-red text-white font-handwritten font-bold text-2xl py-4 border-2 border-zinc-900 dark:border-white shadow-[6px_6px_0px_0px] shadow-zinc-900 dark:shadow-white hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[8px_8px_0px_0px] transition-all mt-8">
                SUBMIT APPLICATION
             </button>
 

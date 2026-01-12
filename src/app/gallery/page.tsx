@@ -1,57 +1,51 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { Navbar } from "@/components/ui/Navbar";
+import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/layout/Footer";
-
-const photos = [
-  { id: 1, size: 'large', color: 'bg-neutral-800' },
-  { id: 2, size: 'small', color: 'bg-neutral-700' },
-  { id: 3, size: 'small', color: 'bg-neutral-900' },
-  { id: 4, size: 'wide', color: 'bg-neutral-800' },
-  { id: 5, size: 'small', color: 'bg-neutral-700' },
-  { id: 6, size: 'large', color: 'bg-neutral-900' },
-];
+import { Gallery4 } from "@/components/blocks/gallery4";
 
 export default function GalleryPage() {
+  const years = [
+    {
+      title: "2025 Highlights",
+      items: [
+         { id: "1", title: "FinStreet '25", description: "The biggest financial festival of the year.", image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=2000", href: "#" },
+         { id: "2", title: "Crypto Summit", description: "Exploring the future of decentralized finance.", image: "https://images.unsplash.com/photo-1621504450168-b8c437536123?auto=format&fit=crop&q=80&w=2000", href: "#" },
+         { id: "3", title: "Stock Wars", description: "Live trading simulation with real-time market data.", image: "https://images.unsplash.com/photo-1611974765270-ca12586343bb?auto=format&fit=crop&q=80&w=2000", href: "#" },
+      ]
+    },
+    {
+      title: "2024 Memories",
+      items: [
+         { id: "4", title: "Guest Lectures", description: "Industry experts sharing their wisdom.", image: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?auto=format&fit=crop&q=80&w=2000", href: "#" },
+         { id: "5", title: "Networking", description: "Connecting future leaders of finance.", image: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&q=80&w=2000", href: "#" },
+         { id: "6", title: "Workshops", description: "Hands-on learning sessions.", image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=2000", href: "#" },
+      ]
+    }
+  ];
+
   return (
-    <main className="min-h-screen bg-fin-dark text-white">
+    <main className="min-h-screen bg-zinc-50 dark:bg-black text-zinc-900 dark:text-zinc-50">
       <Navbar />
       
-      <section className="pt-32 pb-20 container px-6 mx-auto">
-         <motion.div 
-           initial={{ opacity: 0 }}
-           animate={{ opacity: 1 }}
-           className="text-center mb-16"
-         >
-            <h1 className="font-heading text-[10vw] font-bold leading-none text-white/5 absolute top-20 left-0 right-0 pointer-events-none select-none">
-               GALLERY
-            </h1>
-            <h2 className="relative font-heading text-4xl font-bold text-white z-10">
-               VISUAL <span className="text-fin-blue">STORIES</span>
-            </h2>
-         </motion.div>
-
-         <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-[300px] gap-4">
-            {photos.map((photo, i) => (
-               <motion.div
-                 key={photo.id}
-                 initial={{ opacity: 0, scale: 0.9 }}
-                 whileInView={{ opacity: 1, scale: 1 }}
-                 transition={{ delay: i * 0.1 }}
-                 whileHover={{ scale: 0.98 }}
-                 className={`rounded-2xl overflow-hidden relative group cursor-pointer ${
-                    photo.size === 'large' ? 'md:col-span-1 md:row-span-2' :
-                    photo.size === 'wide' ? 'md:col-span-2' : ''
-                 } ${photo.color}`}
-               >
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
-                     <span className="font-heading font-bold text-white text-lg tracking-widest">VIEW</span>
-                  </div>
-               </motion.div>
-            ))}
-         </div>
+      <section className="pt-32 pb-10 text-center">
+         <h1 className="font-handwritten text-[10vw] leading-none font-bold text-center rotate-[-2deg]">
+           OUR <span className="text-fin-blue underline decoration-wavy decoration-2">GALLERY</span>
+         </h1>
+         <p className="font-handwritten text-xl max-w-2xl mx-auto mt-6 text-zinc-600 dark:text-zinc-400 rotate-[1deg]">
+            A visual journey through our events, workshops, and community gatherings.
+         </p>
       </section>
+
+      {years.map((year, idx) => (
+        <section key={year.title} className={`py-10 ${idx % 2 !== 0 ? 'bg-fin-blue/5 border-y-2 border-zinc-900 dark:border-white' : ''}`}>
+           <Gallery4 
+             title={year.title}
+             description={`Capturing the best moments from ${year.title.split(' ')[0]}.`}
+             items={year.items}
+           />
+        </section>
+      ))}
 
       <Footer />
     </main>

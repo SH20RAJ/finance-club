@@ -1,8 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/layout/Footer";
 
 function InputField({ label, type = "text", placeholder }: { label: string, type?: string, placeholder?: string }) {
   return (
@@ -33,7 +31,6 @@ function TextArea({ label, placeholder }: { label: string, placeholder?: string 
 export default function ContactPage() {
   return (
     <main className="min-h-screen bg-zinc-50 dark:bg-black text-zinc-900 dark:text-zinc-50">
-      <Navbar />
 
       <section className="pt-32 pb-20 container px-6 mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
          
@@ -89,7 +86,6 @@ export default function ContactPage() {
 
       </section>
 
-      <Footer />
     </main>
   );
 }

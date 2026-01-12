@@ -1,7 +1,5 @@
 'use client';
 
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/layout/Footer";
 import { Gallery4 } from "@/components/blocks/gallery4";
 
 export default function GalleryPage() {
@@ -25,17 +23,16 @@ export default function GalleryPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-zinc-50 dark:bg-black text-zinc-900 dark:text-zinc-50">
-      <Navbar />
+    <main className="min-h-screen bg-white dark:bg-black text-zinc-900 dark:text-zinc-50 selection:bg-fin-blue selection:text-white pt-24">
       
-      <section className="pt-32 pb-10 text-center">
+      <div className="container mx-auto px-6 py-10 mb-16 text-center">
          <h1 className="font-handwritten text-[10vw] leading-none font-bold text-center rotate-[-2deg]">
            OUR <span className="text-fin-blue underline decoration-wavy decoration-2">GALLERY</span>
          </h1>
          <p className="font-handwritten text-xl max-w-2xl mx-auto mt-6 text-zinc-600 dark:text-zinc-400 rotate-[1deg]">
             A visual journey through our events, workshops, and community gatherings.
          </p>
-      </section>
+      </div>
 
       {years.map((year, idx) => (
         <section key={year.title} className={`py-10 ${idx % 2 !== 0 ? 'bg-fin-blue/5 border-y-2 border-zinc-900 dark:border-white' : ''}`}>
@@ -46,8 +43,6 @@ export default function GalleryPage() {
            />
         </section>
       ))}
-
-      <Footer />
     </main>
   );
 }

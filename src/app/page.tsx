@@ -1,8 +1,6 @@
-import { Navbar } from "@/components/navbar";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
-import { Testimonial } from "@/components/ui/design-testimonial"; // Check named export compatibility
 import { Gallery4 } from "@/components/blocks/gallery4";
-import { Footer } from "@/components/layout/Footer";
+import { Testimonial } from "@/components/ui/design-testimonial";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import Link from "next/link"; // Required for Link usage
@@ -15,7 +13,6 @@ export const metadata = {
 export default function Home() {
   return (
     <main className="min-h-screen bg-zinc-50 dark:bg-black text-zinc-900 dark:text-zinc-50 selection:bg-fin-blue selection:text-white overflow-hidden">
-      <Navbar />
       
       {/* HERO SECTION WITH GLOWING EFFECT */}
       <section className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden pt-20">
@@ -83,7 +80,6 @@ export default function Home() {
          <Testimonial />
       </section>
 
-      <Footer />
     </main>
   );
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Nunito_Sans, Syne, Patrick_Hand } from "next/font/google"; // Using Syne as substitute for Concourse
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/layout/Footer";
 
 const nunitoSans = Nunito_Sans({
 	variable: "--font-nunito-sans",
@@ -36,11 +37,7 @@ export default function RootLayout({
 			<head>
 				<link rel="icon" href="/favicon.svg" type="image/svg+xml"></link>
 			</head>
-import { Footer } from "@/components/layout/Footer";
-
-// ...
-
-			<body className={`${nunitoSans.variable} ${syne.variable} ${patrickHand.variable} antialiased bg-background text-foreground min-h-screen relative overflow-x-hidden`}>
+			<body className={`${nunitoSans.variable} ${syne.variable} antialiased bg-background text-foreground min-h-screen relative overflow-x-hidden`}>
 				<div className="flex flex-col min-h-screen">
                     <Navbar />
 					{children}

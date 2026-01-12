@@ -1,32 +1,15 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/layout/Footer";
+import IntroAnimation from "@/components/ui/scroll-morph-hero";
 
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-zinc-50 dark:bg-black text-zinc-900 dark:text-zinc-50 selection:bg-fin-blue selection:text-white">
-      <Navbar />
       
-      {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex flex-col items-center justify-center pt-32 overflow-hidden">
-        <motion.h1 
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          className="font-handwritten text-[10vw] leading-none font-bold text-center z-10 rotate-[-2deg]"
-        >
-          WHO WE <span className="text-fin-blue underline decoration-wavy decoration-2">ARE</span>
-        </motion.h1>
-
-        <motion.p 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-          className="max-w-2xl text-center text-zinc-600 dark:text-zinc-400 font-handwritten text-2xl mt-8 px-6 z-10 rotate-[1deg]"
-        >
-          The Finance Club of BIT Mesra is a student-run organization dedicated to fostering financial literacy and cultivating the next generation of financial leaders.
-        </motion.p>
+      {/* Scroll Morph Hero Section */}
+      <section className="h-screen w-full">
+         <IntroAnimation />
       </section>
 
       {/* Mission & Vision */}
@@ -87,7 +70,6 @@ export default function AboutPage() {
          </div>
       </section>
 
-      <Footer />
     </main>
   );
 }

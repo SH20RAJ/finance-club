@@ -1,7 +1,5 @@
 'use client';
 
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/layout/Footer";
 import { CreativePricing, PricingTier } from "@/components/ui/creative-pricing";
 import { Zap, Trophy, Target, Calendar } from "lucide-react";
 
@@ -37,10 +35,9 @@ export default function EventsPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-zinc-50 dark:bg-black font-sans">
-      <Navbar />
+    <main className="min-h-screen bg-white dark:bg-black text-zinc-900 dark:text-zinc-50 selection:bg-fin-blue selection:text-white pt-24">
       
-      <section className="pt-32 pb-20">
+      <div className="container mx-auto px-6 py-10">
          <CreativePricing 
            tag="Upcoming Events"
            title="Mark Your Calendars"
@@ -49,7 +46,6 @@ export default function EventsPage() {
          />
       </section>
 
-      <Footer />
     </main>
   );
 }

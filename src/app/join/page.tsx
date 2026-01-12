@@ -1,13 +1,10 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/layout/Footer";
 
 export default function JoinPage() {
   return (
     <main className="min-h-screen bg-zinc-50 dark:bg-black text-zinc-900 dark:text-zinc-50">
-      <Navbar />
       
       <section className="pt-40 pb-20 container max-w-3xl mx-auto px-6">
          <motion.div 
@@ -70,7 +67,6 @@ export default function JoinPage() {
          </motion.form>
       </section>
 
-      <Footer />
     </main>
   );
 }

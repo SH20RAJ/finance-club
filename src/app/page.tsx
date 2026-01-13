@@ -6,8 +6,8 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import Link from "next/link"; // Required for Link usage
 
 export const metadata = {
-  title: "Finance Club | Creative",
-  description: "The most creative finance club on campus.",
+  title: "Finance Club | BIT Mesra",
+  description: "Finance Club of BIT Mesra. Fostering financial literacy and market awareness.",
 };
 
 export default function Home() {
@@ -58,14 +58,14 @@ export default function Home() {
      {/* GALLERY SECTION */}
       <section className="relative z-10 py-20 bg-white dark:bg-zinc-950 border-y-2 border-zinc-900 dark:border-zinc-800">
          <Gallery4 
-           title="Our Memories" 
-           description="Snapshots from the trading floor, hackathons, and late-night analysis sessions."
+           title="Check out our Photo Gallery" 
+           description="Capturing moments. Preserving stories."
            items={[
-             { id: "1", title: "FinStreet '25", description: "The biggest financial festival of the year.", image: "/image.png", href: "/events" },
-             { id: "2", title: "Crypto Summit", description: "Exploring the future of decentralized finance.", image: "/image copy.png", href: "/events" },
-             { id: "3", title: "Stock Wars", description: "Live trading simulation with real-time market data.", image: "https://images.unsplash.com/photo-1611974765270-ca12586343bb?auto=format&fit=crop&q=80&w=2000", href: "/events" },
-             { id: "4", title: "Guest Lectures", description: "Industry experts sharing their wisdom.", image: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?auto=format&fit=crop&q=80&w=2000", href: "/events" },
-             { id: "5", title: "Networking", description: "Connecting future leaders of finance.", image: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&q=80&w=2000", href: "/events" }
+             { id: "1", title: "Stock Market Sessions", description: "Deep dives into technical analysis and market trends.", image: "/figma_attachments/stock_session.png", href: "/gallery" },
+             { id: "2", title: "Case Study Competitions", description: "Solving real-world financial problems under pressure.", image: "/figma_attachments/case_study.png", href: "/gallery" },
+             { id: "3", title: "Financial Workshops", description: "Hands-on learning with industry experts.", image: "/figma_attachments/workshop.png", href: "/gallery" },
+             { id: "4", title: "Hackathons", description: "Innovating the future of fintech.", image: "/figma_attachments/hackathon.png", href: "/gallery" },
+             { id: "5", title: "Community Events", description: "Networking with like-minded finance enthusiasts.", image: "/figma_attachments/case_study.png", href: "/gallery" }
            ]}
          />
       </section>

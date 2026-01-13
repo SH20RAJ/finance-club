@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { ArrowRight, TrendingUp, Wallet, PieChart } from 'lucide-react';
+import { TrendingUp, Wallet, PieChart } from 'lucide-react';
 
 export default function ServicesClient() {
   const services = [

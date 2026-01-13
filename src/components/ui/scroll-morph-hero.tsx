@@ -14,8 +14,8 @@ export type AnimationPhase = "scatter" | "line" | "circle" | "bottom-strip";
 interface FlipCardProps {
     src: string;
     index: number;
-    total: number;
-    phase: AnimationPhase;
+    // total: number; // Removed unused
+    phase?: AnimationPhase; // Optional if needed elsewhere or removed
     target: { x: number; y: number; rotation: number; scale: number; opacity: number };
 }
 
@@ -26,8 +26,6 @@ const IMG_HEIGHT = 85; // Reduced from 140
 function FlipCard({
     src,
     index,
-    total,
-    phase,
     target,
 }: FlipCardProps) {
     return (
@@ -399,8 +397,8 @@ export default function IntroAnimation() {
                                 key={i}
                                 src={src}
                                 index={i}
-                                total={TOTAL_IMAGES}
-                                phase={introPhase} // Pass intro phase for initial animations
+                                // total={TOTAL_IMAGES}
+                                // phase={introPhase} 
                                 target={target}
                             />
                         );

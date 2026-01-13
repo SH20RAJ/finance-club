@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Nunito_Sans, Syne, Patrick_Hand } from "next/font/google"; // Using Syne as substitute for Concourse
+import { Nunito_Sans, Syne } from "next/font/google"; // Using Syne as substitute for Concourse
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -16,11 +16,7 @@ const syne = Syne({
 	weight: ["400", "500", "600", "700", "800"], // Geometric weights
 });
 
-const patrickHand = Patrick_Hand({
-	variable: "--font-patrick-hand",
-	subsets: ["latin"],
-	weight: ["400"],
-});
+// patrickHand removed
 
 export const metadata: Metadata = {
 	title: "Finance Club | BIT Mesra",

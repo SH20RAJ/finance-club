@@ -16,6 +16,9 @@ export default function CareersClient() {
             <h1 className="font-handwritten text-6xl md:text-8xl font-bold mb-6 rotate-[-2deg]">
               JOIN OUR <span className="text-fin-blue">TEAM</span>
             </h1>
+               <p className="font-handwritten text-2xl text-zinc-600 mb-12">
+                  Come, let&apos;s build the future of finance together.
+               </p>
             <p className="font-handwritten text-2xl text-zinc-600 dark:text-zinc-300 max-w-xl mx-auto rotate-[1deg]">
                We're looking for passionate individuals to help us shape the future of finance at BIT Mesra.
             </p>

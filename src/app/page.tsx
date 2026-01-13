@@ -76,11 +76,11 @@ export default function Home() {
                      </p>
                   </div>
                   <div className="mt-10">
-                     <Link href="/about">
-                        <Button className="font-handwritten font-bold text-lg bg-white text-zinc-900 border-2 border-zinc-900 hover:bg-zinc-200 transition-colors">
+                     <Button asChild className="font-handwritten font-bold text-lg bg-white text-zinc-900 border-2 border-zinc-900 hover:bg-zinc-200 transition-colors">
+                        <Link href="/about">
                            Read Our Full Story <ArrowRight className="ml-2 w-5 h-5" />
-                        </Button>
-                     </Link>
+                        </Link>
+                     </Button>
                   </div>
                </div>
                

@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Instagram, Hash } from 'lucide-react';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 export default function CommunityClient() {
   const posts = [

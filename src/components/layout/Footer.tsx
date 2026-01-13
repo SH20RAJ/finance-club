@@ -10,7 +10,7 @@ export function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-8 bg-fin-blue/10 dark:bg-zinc-900 p-10 border-2 border-zinc-900 dark:border-white shadow-[8px_8px_0px_0px] shadow-zinc-900 dark:shadow-white rounded-2xl rotate-[-1deg] hover:rotate-[0deg] transition-all duration-300">
              <div>
                 <h3 className="font-handwritten text-4xl font-bold mb-2">Register For Our Events Now</h3>
-                <p className="font-handwritten text-xl text-zinc-600 dark:text-zinc-400">Don't miss out on the action!</p>
+                <p className="font-handwritten text-xl text-zinc-600 dark:text-zinc-400">Don&apos;t miss out on the action!</p>
              </div>
              <Link href="/events" className="group flex items-center gap-3 bg-fin-blue text-white px-8 py-3 rounded-full font-handwritten font-bold text-xl border-2 border-zinc-900 dark:border-white shadow-[4px_4px_0px_0px] shadow-zinc-900 dark:shadow-white hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px] transition-all">
                 Register Now <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

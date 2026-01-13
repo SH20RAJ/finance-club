@@ -20,7 +20,7 @@ export default function CareersClient() {
                   Come, let&apos;s build the future of finance together.
                </p>
             <p className="font-handwritten text-2xl text-zinc-600 dark:text-zinc-300 max-w-xl mx-auto rotate-[1deg]">
-               We're looking for passionate individuals to help us shape the future of finance at BIT Mesra.
+               We&apos;re looking for passionate individuals to help us shape the future of finance at BIT Mesra.
             </p>
          </motion.div>
 

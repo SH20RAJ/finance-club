@@ -55,6 +55,47 @@ export default function Home() {
          </div>
       </section>
 
+      {/* ABOUT / MISSION SECTION */}
+      <section className="py-24 bg-zinc-900 border-y-2 border-zinc-500 overflow-hidden relative">
+         <div className="container mx-auto px-6 relative z-10">
+            <div className="flex flex-col md:flex-row gap-16 items-center">
+               <div className="flex-1">
+                  <h2 className="font-handwritten text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">
+                     A Tool that can cut both ways — <br/>
+                     <span className="text-fin-blue">Creating Wealth</span> or <span className="text-fin-red">Causing Harm</span>.
+                  </h2>
+                  <div className="space-y-6 text-xl text-zinc-300 font-handwritten leading-relaxed">
+                     <p>
+                        The Finance Club of Birla Institute of Technology, Mesra is a student-driven initiative dedicated to fostering financial literacy, market awareness, and a deeper understanding of the global economic landscape.
+                     </p>
+                     <p>
+                        Established with the vision of bridging the gap between classroom learning and real-world financial applications, the club provides a platform for students to explore the dynamic world of finance through hands-on learning and collaborative growth.
+                     </p>
+                     <p>
+                        At the Finance Club, we believe that financial education empowers individuals to make informed decisions—whether in personal finance, investments, corporate strategy, or entrepreneurship.
+                     </p>
+                  </div>
+                  <div className="mt-10">
+                     <Link href="/about">
+                        <Button className="font-handwritten font-bold text-lg bg-white text-zinc-900 border-2 border-zinc-900 hover:bg-zinc-200 transition-colors">
+                           Read Our Full Story <ArrowRight className="ml-2 w-5 h-5" />
+                        </Button>
+                     </Link>
+                  </div>
+               </div>
+               
+               <div className="flex-1 relative">
+                  <div className="absolute -inset-4 bg-fin-blue/20 blur-3xl rounded-full"></div>
+                  <div className="relative bg-zinc-800 border-2 border-white p-8 rotate-[2deg] shadow-[12px_12px_0px_0px] shadow-white">
+                      <div className="aspect-video bg-zinc-900 flex items-center justify-center border border-zinc-700">
+                         <span className="font-handwritten text-zinc-500 text-2xl">Club Session / Team Photo</span>
+                      </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
      {/* GALLERY SECTION */}
       <section className="relative z-10 py-20 bg-white dark:bg-zinc-950 border-y-2 border-zinc-900 dark:border-zinc-800">
          <Gallery4 

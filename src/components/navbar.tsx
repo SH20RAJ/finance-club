@@ -1,198 +1,107 @@
 "use client";
 
-import { cn } from "@/lib/utils";
-import {
-    AnimatePresence,
-    MotionValue,
-    motion,
-    useMotionValue,
-    useSpring,
-    useTransform,
-} from "framer-motion";
+import { useState, useEffect } from "react";
 import Link from "next/link";
-import { useRef, useState } from "react";
-import { Home, Info, Calendar, BarChart3, Newspaper, Menu } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Button } from "@/components/ui/button";
 
 export const Navbar = () => {
-    return (
-        <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
-            <FloatingDock
-                items={[
-                    { title: "Home", icon: <Home className="h-full w-full" />, href: "/" },
-                    { title: "About", icon: <Info className="h-full w-full" />, href: "/about" },
-                    { title: "Events", icon: <Calendar className="h-full w-full" />, href: "/events" },
-                    { title: "Gallery", icon: <Newspaper className="h-full w-full" />, href: "/gallery" },
-                ]}
-            />
-        </div>
-    );
-};
+    const [isOpen, setIsOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
 
-const FloatingDock = ({
-    items,
-    desktopClassName,
-    mobileClassName,
-}: {
-    items: { title: string; icon: React.ReactNode; href: string }[];
-    desktopClassName?: string;
-    mobileClassName?: string;
-}) => {
-    return (
-        <>
-            <FloatingDockDesktop items={items} className={desktopClassName} />
-            <FloatingDockMobile items={items} className={mobileClassName} />
-        </>
-    );
-};
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 20);
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
-const FloatingDockMobile = ({
-    items,
-    className,
-}: {
-    items: { title: string; icon: React.ReactNode; href: string }[];
-    className?: string;
-}) => {
-    const [open, setOpen] = useState(false);
+    const links = [
+        { name: "Home", href: "/" },
+        { name: "About", href: "/about" },
+        { name: "Events", href: "/events" },
+        { name: "Gallery", href: "/gallery" },
+        { name: "Community", href: "/community" },
+        { name: "Services", href: "/services" },
+    ];
+
     return (
-        <div className={cn("relative block md:hidden", className)}>
+        <nav
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+                scrolled
+                    ? "bg-white/90 dark:bg-black/90 backdrop-blur-md border-b-2 border-zinc-900 dark:border-white py-3 shadow-[0_4px_0_0_rgba(0,0,0,1)] dark:shadow-[0_4px_0_0_rgba(255,255,255,1)]"
+                    : "bg-transparent py-6"
+            }`}
+        >
+            <div className="container mx-auto px-6 flex items-center justify-between">
+                {/* Logo */}
+                <Link href="/" className="font-handwritten font-bold text-3xl tracking-tighter hover:-rotate-2 transition-transform">
+                    FIN<span className="text-fin-blue">STREET</span>
+                </Link>
+
+                {/* Desktop Links */}
+                <div className="hidden lg:flex items-center gap-8">
+                    {links.map((link) => (
+                        <Link
+                            key={link.name}
+                            href={link.href}
+                            className="font-handwritten text-xl font-bold text-zinc-600 dark:text-zinc-300 hover:text-fin-blue dark:hover:text-fin-blue transition-colors relative group"
+                        >
+                            {link.name}
+                            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-fin-blue transition-all group-hover:w-full"></span>
+                        </Link>
+                    ))}
+                </div>
+
+                {/* CTA */}
+                <div className="hidden lg:flex items-center gap-4">
+                    <Link href="/join">
+                        <Button className="font-handwritten font-bold text-lg bg-fin-blue text-white border-2 border-zinc-900 dark:border-white shadow-[4px_4px_0px_0px] shadow-zinc-900 dark:shadow-white hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px] transition-all">
+                            Join Club
+                        </Button>
+                    </Link>
+                </div>
+
+                {/* Mobile Toggle */}
+                <button
+                    onClick={() => setIsOpen(!isOpen)}
+                    className="lg:hidden p-2 hover:bg-zinc-100 dark:hover:bg-zinc-800 rounded-md transition-colors"
+                >
+                    {isOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
+                </button>
+            </div>
+
+            {/* Mobile Menu */}
             <AnimatePresence>
-                {open && (
+                {isOpen && (
                     <motion.div
-                        layoutId="nav"
-                        className="absolute bottom-full mb-2 inset-x-0 flex flex-col gap-2"
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "100vh" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        className="lg:hidden bg-white dark:bg-black fixed inset-0 z-40 pt-24 px-6 overflow-y-auto"
                     >
-                        {items.map((item, idx) => (
-                            <motion.div
-                                key={item.title}
-                                initial={{ opacity: 0, y: 10 }}
-                                animate={{
-                                    opacity: 1,
-                                    y: 0,
-                                }}
-                                exit={{
-                                    opacity: 0,
-                                    y: 10,
-                                    transition: {
-                                        delay: idx * 0.05,
-                                    },
-                                }}
-                                transition={{ delay: (items.length - 1 - idx) * 0.05 }}
-                            >
+                        <div className="flex flex-col items-center gap-8">
+                            {links.map((link) => (
                                 <Link
-                                    href={item.href}
-                                    key={item.title}
-                                    className="h-10 w-10 rounded-full bg-background border border-white/10 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors"
+                                    key={link.name}
+                                    href={link.href}
+                                    onClick={() => setIsOpen(false)}
+                                    className="font-handwritten text-4xl font-bold text-zinc-900 dark:text-white hover:text-fin-blue transition-colors"
                                 >
-                                    <div className="h-4 w-4">{item.icon}</div>
+                                    {link.name}
                                 </Link>
-                            </motion.div>
-                        ))}
+                            ))}
+                            <Link href="/join" onClick={() => setIsOpen(false)}>
+                                <Button className="mt-4 font-handwritten font-bold text-2xl px-12 py-6 bg-fin-red text-white border-2 border-zinc-900 dark:border-white shadow-[6px_6px_0px_0px] shadow-zinc-900 dark:shadow-white">
+                                    Join Now
+                                </Button>
+                            </Link>
+                        </div>
                     </motion.div>
                 )}
             </AnimatePresence>
-            <button
-                onClick={() => setOpen(!open)}
-                className="h-12 w-12 rounded-full bg-background border border-white/10 flex items-center justify-center text-primary hover:bg-white/5 transition-colors"
-            >
-                <Menu className="h-5 w-5" />
-            </button>
-        </div>
+        </nav>
     );
 };
-
-const FloatingDockDesktop = ({
-    items,
-    className,
-}: {
-    items: { title: string; icon: React.ReactNode; href: string }[];
-    className?: string;
-}) => {
-    const mouseX = useMotionValue(Infinity);
-    return (
-        <motion.div
-            onMouseMove={(e) => mouseX.set(e.pageX)}
-            onMouseLeave={() => mouseX.set(Infinity)}
-            className={cn(
-                "mx-auto hidden md:flex h-16 gap-4 items-end rounded-2xl bg-background/50 backdrop-blur-md border border-white/10 px-4 pb-3",
-                className
-            )}
-        >
-            {items.map((item) => (
-                <IconContainer mouseX={mouseX} key={item.title} {...item} />
-            ))}
-        </motion.div>
-    );
-};
-
-function IconContainer({
-    mouseX,
-    title,
-    icon,
-    href,
-}: {
-    mouseX: MotionValue;
-    title: string;
-    icon: React.ReactNode;
-    href: string;
-}) {
-    const ref = useRef<HTMLDivElement>(null);
-
-    const distance = useTransform(mouseX, (val) => {
-        const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
-        return val - bounds.x - bounds.width / 2;
-    });
-
-    const widthTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
-    const heightTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
-
-    const width = useSpring(widthTransform, {
-        mass: 0.1,
-        stiffness: 150,
-        damping: 12,
-    });
-    const height = useSpring(heightTransform, {
-        mass: 0.1,
-        stiffness: 150,
-        damping: 12,
-    });
-
-    const iconScale = useTransform(distance, [-150, 0, 150], [1, 1.5, 1]);
-    const iconScaleSpring = useSpring(iconScale, {
-        mass: 0.1,
-        stiffness: 150,
-        damping: 12,
-    });
-
-    const [hovered, setHovered] = useState(false);
-
-    return (
-        <Link href={href}>
-            <motion.div
-                ref={ref}
-                style={{ width, height }}
-                onMouseEnter={() => setHovered(true)}
-                onMouseLeave={() => setHovered(false)}
-                className="aspect-square rounded-full bg-background border border-white/10 flex items-center justify-center relative shadow-[0_0_10px_rgba(0,0,0,0.2)] hover:shadow-[0_0_20px_rgba(252,211,77,0.3)] hover:border-primary/50 transition-shadow"
-            >
-                <AnimatePresence>
-                    {hovered && (
-                        <motion.div
-                            initial={{ opacity: 0, y: 10, x: "-50%" }}
-                            animate={{ opacity: 1, y: 0, x: "-50%" }}
-                            exit={{ opacity: 0, y: 2, x: "-50%" }}
-                            className="px-2 py-0.5 whitespace-pre rounded-md bg-background border border-white/10 absolute left-1/2 -translate-x-1/2 -top-8 w-fit text-xs text-primary font-mono uppercase tracking-widest hidden md:block"
-                        >
-                            {title}
-                        </motion.div>
-                    )}
-                </AnimatePresence>
-                <motion.div
-                    style={{ scale: iconScaleSpring }}
-                    className="flex items-center justify-center text-muted-foreground w-full h-full p-2.5 hover:text-primary transition-colors"
-                >
-                    {icon}
-                </motion.div>
-            </motion.div>
-        </Link>
-    );
-}

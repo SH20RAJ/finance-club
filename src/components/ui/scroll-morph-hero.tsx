@@ -264,7 +264,7 @@ export default function IntroAnimation() {
     const contentY = useTransform(smoothMorph, [0.8, 1], [20, 0]);
 
     return (
-        <div ref={containerRef} className="relative w-full h-full bg-[#FAFAFA] overflow-hidden">
+        <div ref={containerRef} className="relative w-full h-full bg-[#FAFAFA] dark:bg-black overflow-hidden">
             {/* Container */}
             <div className="flex h-full w-full flex-col items-center justify-center perspective-1000">
 
@@ -274,7 +274,7 @@ export default function IntroAnimation() {
                         initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
                         animate={introPhase === "circle" && morphValue < 0.5 ? { opacity: 1 - morphValue * 2, y: 0, filter: "blur(0px)" } : { opacity: 0, filter: "blur(10px)" }}
                         transition={{ duration: 1 }}
-                        className="text-3xl font-bold tracking-tight text-gray-800 md:text-5xl font-handwritten"
+                        className="text-3xl font-bold tracking-tight text-gray-800 dark:text-white md:text-5xl font-handwritten"
                     >
                         Finance Club BIT Mesra
                     </motion.h1>
@@ -282,7 +282,7 @@ export default function IntroAnimation() {
                         initial={{ opacity: 0 }}
                         animate={introPhase === "circle" && morphValue < 0.5 ? { opacity: 0.5 - morphValue } : { opacity: 0 }}
                         transition={{ duration: 1, delay: 0.2 }}
-                        className="mt-4 text-xs font-bold tracking-[0.2em] text-gray-500 uppercase"
+                        className="mt-4 text-xs font-bold tracking-[0.2em] text-gray-500 dark:text-gray-400 uppercase"
                     >
                         Fostering Financial Literacy since 2011
                     </motion.p>
@@ -293,10 +293,10 @@ export default function IntroAnimation() {
                     style={{ opacity: contentOpacity, y: contentY }}
                     className="absolute top-[10%] z-10 flex flex-col items-center justify-center text-center pointer-events-none px-6"
                 >
-                    <h2 className="text-3xl md:text-5xl font-bold text-gray-900 tracking-tight mb-4 font-handwritten">
+                    <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white tracking-tight mb-4 font-handwritten">
                         Bridging Theory & Practice
                     </h2>
-                    <p className="text-sm md:text-lg text-gray-600 max-w-2xl leading-relaxed font-handwritten">
+                    <p className="text-sm md:text-lg text-gray-600 dark:text-zinc-400 max-w-2xl leading-relaxed font-handwritten">
                         From value investing to algorithmic trading, we provide a platform for students to explore the dynamic world of finance through hands-on learning and collaborative growth.
                     </p>
                 </motion.div>

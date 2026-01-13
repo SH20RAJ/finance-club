@@ -37,6 +37,16 @@ export default function RegistrationsClient() {
                    Register Now
                 </button>
              </div>
+
+             {/* Behind The Stumps Card */}
+             <div className="bg-white dark:bg-zinc-900 border-2 border-zinc-900 dark:border-white p-8 shadow-[8px_8px_0px_0px] shadow-amber-500 text-left">
+                <div className="bg-amber-500 text-white inline-block px-3 py-1 font-bold mb-4 font-handwritten">OPEN</div>
+                <h3 className="font-handwritten text-4xl font-bold mb-4">BEHIND THE STUMPS</h3>
+                <p className="mb-6 text-zinc-600 dark:text-zinc-400">IPL Auction Simulation.</p>
+                <button className="w-full py-3 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-bold border-2 border-transparent hover:border-zinc-900 dark:hover:border-white hover:bg-transparent hover:text-zinc-900 dark:hover:text-white transition-all">
+                   Register Now
+                </button>
+             </div>
          </div>
       </div>
     </main>

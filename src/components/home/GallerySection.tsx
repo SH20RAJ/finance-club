@@ -1,51 +1,73 @@
-'use client';
+"use client";
 
+import GalleryCard from './GalleryCard';
 import { motion } from 'framer-motion';
 
-export function GallerySection() {
-  return (
-    <section id="gallery" className="py-24 relative bg-fin-dark">
-       <div className="container px-6">
-          <div className="mb-20 text-center">
-             <motion.h2 
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
-               className="font-heading text-[6vw] leading-none font-bold text-white mb-4"
-             >
-                CAPTURING MOMENTS
-             </motion.h2>
-             <p className="font-sans text-xl text-fin-blue tracking-widest uppercase">Preserving Stories</p>
-          </div>
+const items = [
+    { 
+        title: "Stock Market Sessions", 
+        description: "Deep dives into technical analysis and market trends.", 
+        image: "/figma_attachments/stock_session.png" 
+    },
+    { 
+        title: "Case Study Competitions", 
+        description: "Solving real-world financial problems under pressure.", 
+        image: "/figma_attachments/case_study.png" 
+    },
+    { 
+        title: "Financial Workshops", 
+        description: "Hands-on learning with industry experts.", 
+        image: "/figma_attachments/workshop.png" 
+    },
+    { 
+        title: "Hackathons", 
+        description: "Innovating the future of fintech.", 
+        image: "/figma_attachments/hackathon.png" 
+    }
+];
 
-          <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[800px]">
-             
-             {/* Large Item */}
-             <motion.div 
-               whileHover={{ scale: 0.98 }}
-               className="md:col-span-2 md:row-span-2 bg-neutral-800 rounded-2xl overflow-hidden relative group"
-             >
-                <div className="absolute inset-0 bg-gray-900 animate-pulse" /> {/* Placeholder */}
-                <div className="absolute bottom-0 left-0 p-8">
-                   <span className="text-white font-heading text-2xl">Main Event</span>
+export default function GallerySection() {
+    // Duplicate items for marquee effect
+    const marqueeItems = [...items, ...items];
+
+    return (
+        <section className="py-24 bg-fin-blue/10 border-y-2 border-zinc-900 dark:border-white overflow-hidden">
+            
+            <div className="container mx-auto px-6 mb-16 relative">
+                 <div className="text-center">
+                    <h2 className="font-handwritten text-5xl md:text-7xl font-bold mb-6 rotate-[-2deg]">
+                        CAPTURING <span className="text-fin-red">MOMENTS</span>
+                    </h2>
+                    <p className="font-handwritten text-2xl text-zinc-600 dark:text-zinc-400 rotate-[1deg]">
+                        Preserving the stories that shape us.
+                    </p>
                 </div>
-             </motion.div>
+            </div>
 
-             {/* Small Items */}
-             <motion.div className="bg-neutral-800 rounded-2xl overflow-hidden relative group">
-                <div className="absolute inset-0 bg-gray-800" />
-             </motion.div>
-             <motion.div className="bg-neutral-800 rounded-2xl overflow-hidden relative group">
-                 <div className="absolute inset-0 bg-gray-800" />
-             </motion.div>
+            {/* Scrolling Marquee for Desktop/Tablet */}
+            <div className="relative w-full overflow-hidden">
+                <motion.div 
+                    className="flex gap-8 w-max px-8"
+                    animate={{ x: ["0%", "-50%"] }}
+                    transition={{ 
+                        duration: 30, 
+                        ease: "linear", 
+                        repeat: Infinity 
+                    }}
+                >
+                    {marqueeItems.map((item, i) => (
+                        <div key={i} className="w-[350px] md:w-[400px] flex-shrink-0">
+                            <GalleryCard 
+                                title={item.title} 
+                                description={item.description} 
+                                image={item.image} 
+                                index={i} 
+                            />
+                        </div>
+                    ))}
+                </motion.div>
+            </div>
 
-             {/* Medium Item */}
-             <motion.div className="md:col-span-2 bg-neutral-800 rounded-2xl overflow-hidden relative group">
-                 <div className="absolute inset-0 bg-gray-800" />
-             </motion.div>
-
-          </div>
-       </div>
-    </section>
-  );
+        </section>
+    );
 }

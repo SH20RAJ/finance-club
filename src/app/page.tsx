@@ -1,5 +1,5 @@
 import { GlowingEffect } from "@/components/ui/glowing-effect";
-import { Gallery4 } from "@/components/blocks/gallery4";
+import GallerySection from "@/components/home/GallerySection";
 import { Testimonial } from "@/components/ui/design-testimonial";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
@@ -96,20 +96,8 @@ export default function Home() {
          </div>
       </section>
 
-     {/* GALLERY SECTION */}
-      <section className="relative z-10 py-20 bg-white dark:bg-zinc-950 border-y-2 border-zinc-900 dark:border-zinc-800">
-         <Gallery4 
-           title="Check out our Photo Gallery" 
-           description="Capturing moments. Preserving stories."
-           items={[
-             { id: "1", title: "Stock Market Sessions", description: "Deep dives into technical analysis and market trends.", image: "/figma_attachments/stock_session.png", href: "/gallery" },
-             { id: "2", title: "Case Study Competitions", description: "Solving real-world financial problems under pressure.", image: "/figma_attachments/case_study.png", href: "/gallery" },
-             { id: "3", title: "Financial Workshops", description: "Hands-on learning with industry experts.", image: "/figma_attachments/workshop.png", href: "/gallery" },
-             { id: "4", title: "Hackathons", description: "Innovating the future of fintech.", image: "/figma_attachments/hackathon.png", href: "/gallery" },
-             { id: "5", title: "Community Events", description: "Networking with like-minded finance enthusiasts.", image: "/figma_attachments/case_study.png", href: "/gallery" }
-           ]}
-         />
-      </section>
+      {/* GALLERY SECTION */}
+      <GallerySection />
 
       {/* TESTIMONIALS */}
       <section className="py-20 bg-zinc-50 dark:bg-zinc-900">

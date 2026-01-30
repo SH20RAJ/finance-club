@@ -1,6 +1,4 @@
-"use client";
-
-import { motion } from 'framer-motion';
+import { Reveal } from "@/components/ui/reveal";
 import Link from 'next/link';
 import { ArrowLeft, Calendar, Clock, MapPin, Target, Zap, Share2 } from 'lucide-react';
 import { notFound } from 'next/navigation';
@@ -19,10 +17,7 @@ export default function EventDetailsClient({ event }: { event: Event }) {
           </Link>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-             <motion.div 
-               initial={{ opacity: 0, x: -50 }}
-               animate={{ opacity: 1, x: 0 }}
-             >
+             <Reveal variant="slide-in">
                 <div className="inline-block bg-fin-blue text-white px-4 py-1 rounded-full font-handwritten font-bold mb-6 border-2 border-zinc-900 dark:border-white shadow-[4px_4px_0px_0px] shadow-zinc-900 dark:shadow-white">
                    {event.category.toUpperCase()}
                 </div>
@@ -53,29 +48,27 @@ export default function EventDetailsClient({ event }: { event: Event }) {
                       <Share2 className="w-6 h-6" />
                    </button>
                 </div>
-             </motion.div>
+             </Reveal>
 
-             <motion.div 
-               initial={{ opacity: 0, scale: 0.9, rotate: 2 }}
-               animate={{ opacity: 1, scale: 1, rotate: 2 }}
-               className="bg-white dark:bg-zinc-900 border-2 border-zinc-900 dark:border-white p-8 md:p-12 shadow-[12px_12px_0px_0px] shadow-fin-red h-full flex flex-col justify-center min-h-[400px]"
-             >
-                <div className="text-center">
-                   <Target className="w-24 h-24 mx-auto text-fin-red mb-6" />
-                   <h3 className="font-handwritten text-4xl font-bold mb-6">About The Event</h3>
-                   <p className="font-handwritten text-xl leading-relaxed text-zinc-600 dark:text-zinc-400 mb-8">
-                      {event.longDescription}
-                   </p>
-                   
-                   <div className="space-y-3 text-left">
-                      {event.features.map((feature, i) => (
-                         <div key={i} className="flex items-center gap-3 font-handwritten text-lg font-bold border-b border-zinc-200 dark:border-zinc-800 pb-2">
-                             <Zap className="w-5 h-5 text-fin-yellow" /> {feature}
-                         </div>
-                      ))}
+             <Reveal variant="scale-up" delay={0.2} duration={0.8} className="h-full">
+                <div className="bg-white dark:bg-zinc-900 border-2 border-zinc-900 dark:border-white p-8 md:p-12 shadow-[12px_12px_0px_0px] shadow-fin-red h-full flex flex-col justify-center min-h-[400px] rotate-[2deg]">
+                   <div className="text-center">
+                      <Target className="w-24 h-24 mx-auto text-fin-red mb-6" />
+                      <h3 className="font-handwritten text-4xl font-bold mb-6">About The Event</h3>
+                      <p className="font-handwritten text-xl leading-relaxed text-zinc-600 dark:text-zinc-400 mb-8">
+                         {event.longDescription}
+                      </p>
+                      
+                      <div className="space-y-3 text-left">
+                         {event.features.map((feature, i) => (
+                            <div key={i} className="flex items-center gap-3 font-handwritten text-lg font-bold border-b border-zinc-200 dark:border-zinc-800 pb-2">
+                                <Zap className="w-5 h-5 text-fin-yellow" /> {feature}
+                            </div>
+                         ))}
+                      </div>
                    </div>
                 </div>
-             </motion.div>
+             </Reveal>
           </div>
        </div>
 

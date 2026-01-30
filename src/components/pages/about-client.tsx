@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import IntroAnimation from "@/components/ui/scroll-morph-hero";
 import { ArrowRight } from 'lucide-react';
+import { Reveal } from "@/components/ui/reveal";
 
 export default function AboutClient() {
   return (
@@ -16,28 +17,21 @@ export default function AboutClient() {
       {/* About Content */}
       <section className="py-24 px-6 container mx-auto">
          <div className="max-w-4xl mx-auto text-center space-y-12">
-            <motion.h1 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="font-handwritten text-6xl md:text-8xl font-bold mb-6 rotate-[-2deg]"
-            >
-              ABOUT <span className="text-fin-blue underline decoration-wavy decoration-2">US</span>
-            </motion.h1>
+            <Reveal variant="fade-up">
+                <h1 className="font-handwritten text-6xl md:text-8xl font-bold mb-6 rotate-[-2deg]">
+                ABOUT <span className="text-fin-blue underline decoration-wavy decoration-2">US</span>
+                </h1>
+            </Reveal>
             
-            <motion.div 
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
-               transition={{ delay: 0.2 }}
-               className="bg-white dark:bg-zinc-900 border-2 border-zinc-900 dark:border-white p-8 md:p-12 shadow-[8px_8px_0px_0px] shadow-zinc-900 dark:shadow-white rotate-[1deg]"
-            >
-               <p className="font-handwritten text-xl md:text-2xl text-zinc-700 dark:text-zinc-300 leading-relaxed space-y-6 text-left">
-                  The Finance Club of Birla Institute of Technology, Mesra is a student-led community that promotes financial literacy and practical understanding of finance. 
-                  <br /><br />
-                  It provides students with exposure to financial markets, investment strategies, corporate finance, and economic trends through workshops, discussions, and real-world case studies. The club aims to bridge the gap between academic learning and industry application while helping members develop analytical, professional, and decision-making skills essential for careers in finance and related fields.
-               </p>
-            </motion.div>
+            <Reveal variant="fade-up" delay={0.2}>
+                <div className="bg-white dark:bg-zinc-900 border-2 border-zinc-900 dark:border-white p-8 md:p-12 shadow-[8px_8px_0px_0px] shadow-zinc-900 dark:shadow-white rotate-[1deg]">
+                <p className="font-handwritten text-xl md:text-2xl text-zinc-700 dark:text-zinc-300 leading-relaxed space-y-6 text-left">
+                    The Finance Club of Birla Institute of Technology, Mesra is a student-led community that promotes financial literacy and practical understanding of finance. 
+                    <br /><br />
+                    It provides students with exposure to financial markets, investment strategies, corporate finance, and economic trends through workshops, discussions, and real-world case studies. The club aims to bridge the gap between academic learning and industry application while helping members develop analytical, professional, and decision-making skills essential for careers in finance and related fields.
+                </p>
+                </div>
+            </Reveal>
          </div>
       </section>
 

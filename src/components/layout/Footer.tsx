@@ -1,9 +1,27 @@
+'use client';
+
 import Link from 'next/link';
 import { Twitter, Instagram, Linkedin, Mail, ArrowRight } from 'lucide-react';
+import { useEffect, useRef } from 'react';
 
 export function Footer() {
+  const footerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const updateMargin = () => {
+      const mainContent = document.getElementById('main-content');
+      if (mainContent && footerRef.current) {
+         mainContent.style.marginBottom = `${footerRef.current.offsetHeight}px`;
+      }
+    };
+
+    updateMargin();
+    window.addEventListener('resize', updateMargin);
+    return () => window.removeEventListener('resize', updateMargin);
+  }, []);
+
   return (
-    <footer className="bg-zinc-50 dark:bg-black pt-20 border-t-4 border-zinc-900 dark:border-white">
+    <footer ref={footerRef} className="fixed bottom-0 left-0 w-full z-0 bg-zinc-50 dark:bg-black pt-20 border-t-4 border-zinc-900 dark:border-white">
        
        {/* Top CTA Section */}
        <div className="container px-6 mb-20 border-b-2 border-zinc-900 dark:border-zinc-800 pb-12">

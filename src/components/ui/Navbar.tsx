@@ -1,12 +1,23 @@
 'use client';
 
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious() ?? 0;
+    if (latest > previous && latest > 150) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  });
 
   const links = [
     { name: 'Home', href: '/' },
@@ -16,15 +27,21 @@ export function Navbar() {
     { name: 'Contact', href: '/contact' },
   ];
 
+  const variants = {
+    visible: { y: 0, opacity: 1 },
+    hidden: { y: "-120%", opacity: 0 },
+  };
+
   return (
     <>
       <motion.nav 
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ type: 'spring', stiffness: 100, damping: 20 }}
-        className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4"
+        variants={variants}
+        initial="visible"
+        animate={hidden ? "hidden" : "visible"}
+        transition={{ duration: 0.35, ease: "easeInOut" }}
+        className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none"
       >
-        <div className="bg-white dark:bg-zinc-900 border-2 border-zinc-900 dark:border-white px-6 py-3 rounded-full flex items-center justify-between gap-8 shadow-[6px_6px_0px_0px] shadow-zinc-900 dark:shadow-white w-full max-w-5xl">
+        <div className="pointer-events-auto bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md border-2 border-zinc-900 dark:border-white px-6 py-3 rounded-full flex items-center justify-between gap-8 shadow-[6px_6px_0px_0px] shadow-zinc-900 dark:shadow-white w-full max-w-5xl transition-all duration-300 hover:shadow-[8px_8px_0px_0px] hover:-translate-y-1">
            {/* Logo */}
            <Link href="/" className="font-handwritten font-bold text-2xl tracking-tighter text-zinc-900 dark:text-white hover:rotate-[-2deg] transition-transform">
               FIN<span className="text-fin-blue">PRO</span>
@@ -57,6 +74,7 @@ export function Navbar() {
               <button 
                 onClick={() => setIsOpen(!isOpen)}
                 className="md:hidden p-2 hover:bg-zinc-100 dark:hover:bg-zinc-800 rounded-full transition-colors"
+                aria-label="Toggle Menu"
               >
                 {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
               </button>

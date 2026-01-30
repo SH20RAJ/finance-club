@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import Link from "next/link"; 
 import { Reveal } from "@/components/ui/reveal";
+import { MagneticButton } from "@/components/ui/magnetic-button";
+import { ParallaxOffset } from "@/components/ui/parallax-offset";
 
 export const metadata = {
   title: "Finance Club | BIT Mesra",
@@ -18,10 +20,10 @@ export default function Home() {
       {/* HERO SECTION WITH GLOWING EFFECT */}
       <section className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden pt-20">
          
-         {/* Background Glow */}
-         <div className="absolute inset-0 z-0 opacity-40 dark:opacity-20 pointer-events-none">
+         {/* Background Glow - Parallax */}
+         <ParallaxOffset offset={50} className="absolute inset-0 z-0 opacity-40 dark:opacity-20 pointer-events-none">
             <GlowingEffect spread={100} blur={160} />
-         </div>
+         </ParallaxOffset>
 
          <div className="container relative z-10 flex flex-col items-center text-center px-6">
             <Reveal variant="fade-up" delay={0.1}>
@@ -49,17 +51,21 @@ export default function Home() {
             <div className="flex flex-col md:flex-row gap-6 mt-12">
                <Reveal variant="slide-in" delay={0.6}>
                    <Link href="/join">
-                     <Button className="h-14 px-8 text-xl font-handwritten border-2 border-zinc-900 dark:border-white bg-fin-blue text-white shadow-[6px_6px_0px_0px] shadow-zinc-900 dark:shadow-white hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[8px_8px_0px_0px] transition-all">
-                        Start Trading
-                        <ArrowRight className="ml-2 w-5 h-5" />
-                     </Button>
+                     <MagneticButton>
+                        <Button className="h-14 px-8 text-xl font-handwritten border-2 border-zinc-900 dark:border-white bg-fin-blue text-white shadow-[6px_6px_0px_0px] shadow-zinc-900 dark:shadow-white hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[8px_8px_0px_0px] transition-all">
+                            Start Trading
+                            <ArrowRight className="ml-2 w-5 h-5" />
+                        </Button>
+                     </MagneticButton>
                    </Link>
                </Reveal>
                <Reveal variant="slide-in" delay={0.7}>
                    <Link href="/events">
-                     <Button variant="outline" className="h-14 px-8 text-xl font-handwritten border-2 border-zinc-900 dark:border-white bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white shadow-[6px_6px_0px_0px] shadow-zinc-900 dark:shadow-white hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[8px_8px_0px_0px] transition-all">
-                        View Events
-                     </Button>
+                     <MagneticButton>
+                        <Button variant="outline" className="h-14 px-8 text-xl font-handwritten border-2 border-zinc-900 dark:border-white bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white shadow-[6px_6px_0px_0px] shadow-zinc-900 dark:shadow-white hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[8px_8px_0px_0px] transition-all">
+                            View Events
+                        </Button>
+                     </MagneticButton>
                    </Link>
                </Reveal>
             </div>

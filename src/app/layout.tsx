@@ -36,7 +36,9 @@ export default function RootLayout({
 				<SmoothScroll>
 					<div className="flex flex-col min-h-screen">
 						<Navbar />
-						{children}
+						<main className="flex-1 relative z-10 bg-background shadow-xl mb-[50vh] md:mb-[400px]" id="main-content">
+							{children}
+						</main>
 						<Footer />
 					</div>
 				</SmoothScroll>

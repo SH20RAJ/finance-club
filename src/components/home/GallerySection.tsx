@@ -31,14 +31,15 @@ export default function GallerySection() {
     const marqueeItems = [...items, ...items];
 
     return (
-        <section className="py-24 bg-fin-blue/10 border-y-2 border-zinc-900 dark:border-white overflow-hidden">
+        <section className="py-24 bg-zinc-50 dark:bg-black border-y border-zinc-200 dark:border-white/5 overflow-hidden relative">
+            <div className="absolute inset-0 bg-fin-blue/5 pointer-events-none" />
             
-            <div className="container mx-auto px-6 mb-16 relative">
+            <div className="container mx-auto px-6 mb-16 relative z-10">
                  <div className="text-center">
-                    <h2 className="font-handwritten text-5xl md:text-7xl font-bold mb-6 rotate-[-2deg]">
+                    <h2 className="font-heading text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-b from-zinc-900 to-zinc-600 dark:from-white dark:to-zinc-500">
                         CAPTURING <span className="text-fin-red">MOMENTS</span>
                     </h2>
-                    <p className="font-handwritten text-2xl text-zinc-600 dark:text-zinc-400 rotate-[1deg]">
+                    <p className="font-sans text-xl text-zinc-600 dark:text-zinc-400 font-light max-w-2xl mx-auto">
                         Preserving the stories that shape us.
                     </p>
                 </div>

@@ -1,9 +1,7 @@
 "use client";
 
-import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles, TrendingUp, Users, Calendar } from 'lucide-react';
+import { Sparkles, TrendingUp, Users, Calendar } from 'lucide-react';
 import { Reveal } from "@/components/ui/reveal";
-import { Button } from "@/components/ui/button";
 
 export default function AboutClient() {
   return (

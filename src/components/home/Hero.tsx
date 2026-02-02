@@ -1,86 +1,45 @@
-'use client';
+"use client";
+import React from "react";
 
-import { motion } from 'framer-motion';
+import { Spotlight } from "@/components/ui/spotlight";
+import { BackgroundBeams } from "@/components/ui/background-beams";
+import { ArrowRight } from "lucide-react";
+import Link from 'next/link';
 
-export function Hero() {
+export function HeroSection() {
   return (
-    <section className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden pt-20">
-      
+    <div className="h-screen w-full rounded-md flex md:items-center md:justify-center bg-transparent antialiased bg-grid-white/[0.02] relative overflow-hidden">
+        
       {/* Background Ambience */}
-      <div className="absolute inset-0 bg-fin-dark">
-         <div className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-fin-blue/10 rounded-full blur-[120px]" />
-         <div className="absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] bg-fin-red/10 rounded-full blur-[140px]" />
-      </div>
-
-      <div className="container relative z-10 px-6 flex flex-col items-center text-center">
-        
-        {/* Intro Text */}
-        <motion.p 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-fin-blue font-sans font-medium text-lg tracking-widest uppercase mb-4"
-        >
-          Presenting our Flagship Event
-        </motion.p>
-        
-        {/* Main Title FINSTREET */}
-        <motion.h1 
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="font-heading text-[12vw] leading-[0.85] font-bold text-transparent bg-clip-text bg-linear-to-b from-white to-white/60 tracking-tight"
-        >
+      <Spotlight
+        className="-top-40 left-0 md:left-60 md:-top-20"
+        fill="white"
+      />
+      <BackgroundBeams className="opacity-20" />
+      
+      <div className="p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
+        <h1 className="text-5xl md:text-8xl font-heading font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
           FINSTREET
-        </motion.h1>
+        </h1>
+        <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto font-sans">
+          Where strategy meets uncertainty. Join the premier finance community of BIT Mesra to decode markets, master wealth, and lead the future of finance.
+        </p>
 
-        {/* Subtitle */}
-        <motion.h2
-           initial={{ opacity: 0, x: -50 }}
-           animate={{ opacity: 1, x: 0 }}
-           transition={{ duration: 0.8, delay: 0.4 }}
-           className="font-heading text-[5vw] text-fin-red translate-y-[-2vw] z-20"
-        >
-           BEHIND THE STUMPS
-        </motion.h2>
-        
-        {/* Tagline */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
-          className="max-w-2xl text-gray-400 font-sans text-xl mt-8 font-light"
-        >
-           Where strategy meets the spirit of cricket. <br/>
-           <span className="text-white font-semibold">Build Smart. Bid Smarter.</span>
-        </motion.p>
-        
-        {/* Countdown Timer (Static Placeholder for now, can be dynamic) */}
-        <motion.div 
-           initial={{ opacity: 0, y: 30 }}
-           animate={{ opacity: 1, y: 0 }}
-           transition={{ delay: 1, duration: 0.8 }}
-           className="grid grid-cols-4 gap-8 mt-16 p-8 glass-card rounded-2xl"
-        >
-           <div className="flex flex-col items-center">
-             <span className="text-4xl font-heading font-bold text-white">21</span>
-             <span className="text-sm font-sans uppercase tracking-widest text-gray-500">Days</span>
-           </div>
-           <div className="flex flex-col items-center">
-             <span className="text-4xl font-heading font-bold text-white">14</span>
-             <span className="text-sm font-sans uppercase tracking-widest text-gray-500">Hours</span>
-           </div>
-           <div className="flex flex-col items-center">
-             <span className="text-4xl font-heading font-bold text-white">20</span>
-             <span className="text-sm font-sans uppercase tracking-widest text-gray-500">Mins</span>
-           </div>
-           <div className="flex flex-col items-center">
-              <span className="text-4xl font-heading font-bold text-fin-green animate-pulse">LIVE</span>
-              <span className="text-sm font-sans uppercase tracking-widest text-fin-green/60">Status</span>
-           </div>
-        </motion.div>
-
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-10">
+            <Link href="/join">
+                <button className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block">
+                    <span className="absolute inset-0 overflow-hidden rounded-full">
+                        <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                    </span>
+                    <div className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-3 px-8 ring-1 ring-white/10 ">
+                        <span className="text-lg">Join the Club</span>
+                        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                </button>
+            </Link>
+        </div>
       </div>
-    </section>
+      
+    </div>
   );
 }

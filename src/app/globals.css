@@ -32,12 +32,13 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
 
-  /* Custom Finance Club Colors - Fintech Refresh */
-  --color-fin-blue: #564bf0; /* Vibrant Indigo */
-  --color-fin-red: #ff3b5c; /* Punchy Red */
-  --color-fin-dark: #0a0a0f; /* Deep Navy Black */
-  --color-fin-surface: #13131f; /* Card Surface */
-  --color-fin-green: #00d65b;
+  /* Custom Finance Club Colors - Quantum Refresh */
+  --color-fin-blue: #564bf0; /* Electric Indigo */
+  --color-fin-glow: #7b61ff; /* Haze Glow */
+  --color-fin-dark: #020202; /* Deep Space Black */
+  --color-fin-surface: #0a0a0f; /* Card Surface */
+  --color-fin-border: rgba(255, 255, 255, 0.08);
+  --color-fin-green: #00ff9d; /* Neon Green */
 
   --radius-lg: 1rem;
   --radius-md: 0.75rem;
@@ -133,38 +134,39 @@
 }
 
 .dark {
-  /* New Fintech Dark Theme */
-  --background: #0a0a0f;
+  /* Quantum Finance Theme */
+  --background: #020202;
   --foreground: #ffffff;
 
-  --card: #13131f;
+  --card: #0a0a0f;
+
   --card-foreground: #ffffff;
 
-  --popover: #13131f;
+  --popover: #0a0a0f;
   --popover-foreground: #ffffff;
 
   --primary: #564bf0;
   --primary-foreground: #ffffff;
 
-  --secondary: #1e2030;
+  --secondary: #13131f;
   --secondary-foreground: #ffffff;
 
-  --muted: #1e2030;
+  --muted: #13131f;
   --muted-foreground: #a1a1aa;
 
   --accent: #564bf0;
   --accent-foreground: #ffffff;
 
   --destructive: oklch(0.6 0.25 25);
-  --border: rgba(255, 255, 255, 0.08);
-  --input: rgba(255, 255, 255, 0.1);
+  --border: rgba(255, 255, 255, 0.08); /* Ultra subtle border */
+  --input: rgba(255, 255, 255, 0.08);
   --ring: #564bf0;
 
-  --sidebar: #0a0a0f;
+  --sidebar: #020202;
   --sidebar-foreground: #ffffff;
   --sidebar-primary: #564bf0;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #13131f;
+  --sidebar-accent: #0a0a0f;
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: rgba(255, 255, 255, 0.05);
   --sidebar-ring: #564bf0;

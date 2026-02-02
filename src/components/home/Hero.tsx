@@ -6,6 +6,8 @@ import { BackgroundBeams } from "@/components/ui/background-beams";
 import { ArrowRight } from "lucide-react";
 import Link from 'next/link';
 
+import { Globe } from "@/components/ui/globe";
+
 export function HeroSection() {
   return (
     <div className="h-screen w-full rounded-md flex md:items-center md:justify-center bg-transparent antialiased bg-grid-white/[0.02] relative overflow-hidden">
@@ -38,6 +40,14 @@ export function HeroSection() {
                 </button>
             </Link>
         </div>
+      </div>
+
+      {/* Interactive Globe - Positioned at bottom as a "World Foundation" */}
+      <div className="absolute bottom-[-10rem] md:bottom-[-15rem] left-0 w-full z-0 h-[40rem] pointer-events-none select-none">
+          <div className="pointer-events-auto h-full w-full">
+             <Globe className="opacity-40 hover:opacity-100 transition-opacity duration-500" />
+          </div>
+          <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent pointer-events-none" />
       </div>
       
     </div>
